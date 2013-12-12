@@ -1,6 +1,3 @@
-zmq-experiments
-===============
+Linking realworld input from a RaspberryPi to the interwebs!
 
-Collection of experiments.
-
-This is a placeholder, the experiments haven't not been committed. Yet.
+This is a work in progress.
