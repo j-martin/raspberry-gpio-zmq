@@ -1,5 +1,6 @@
 # RaspberryPi
 RPi.GPIO
+RPIO
 
 # ZMQ
 pyzmq
