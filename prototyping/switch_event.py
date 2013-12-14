@@ -1,27 +1,40 @@
 import RPi.GPIO as GPIO
 import time
 
-timer = 0.02 # seconds
-print timer
-# use P1 header pin numbering convention
-GPIO.setmode(GPIO.BOARD)
 
-channel = 26
+class monitor(object):
 
-GPIO.add_event_detect(channel, GPIO.RISING)  # add rising edge detection on a channel
-# Set up the GPIO channels - one input and one output
-# GPIO.setup(26, GPIO.IN)
-while True:
-	if GPIO.event_detected(channel):
-	    print('Button pressed')
+    """docstring for monitor inputs of the GPIO. The channels should be specified."""
 
-# Input from pin 11
-# while 1:
-# 	val = GPIO.input(26)
-# 	if val == 1:
-# 		print 'the light is on' , val
-# 	else:
-# 		print 'the light is off'
-# 	time.sleep(.25)
+    def __init__(self, channels=[24, 26]):
+        super(monitor, self).__init__()
+        self.channels = channels
+        self.register_channels()
 
+    def event_callback(self, channel):
 
+        """Function that runs when an input changes."""
+
+        if GPIO.input(channel) == 1:
+            print('%s has been closed.' % channel)
+        else:
+            print('%s has been opened.' % channel)
+
+    def register_channels(self):
+
+        GPIO.setmode(GPIO.BOARD)
+        for channel in self.channels:
+            GPIO.setup(channel, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
+            GPIO.add_event_detect(
+                channel, GPIO.BOTH, callback=self.event_callback)
+        return 0
+
+    def run(self):
+
+        """Infinite loop"""
+        while True:
+            time.sleep(60)
+
+if __name__ == '__main__':
+    m = monitor()
+    m.run()
