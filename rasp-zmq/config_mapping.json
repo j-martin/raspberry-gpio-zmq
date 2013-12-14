@@ -129,10 +129,10 @@
   },
   {
     "pin": "26",
-    "sensor": "unused",
+    "sensor": "system_alarmed",
     "state": [
-      "closed",
-      "open"
+      "yes",
+      "no"
     ]
   }
 ]

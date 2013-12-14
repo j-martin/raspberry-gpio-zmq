@@ -1,5 +1,6 @@
 {
-  "polling": "1",
+  "server": "pi",
+  "port":"5556",
   "log_path": "./logs",
   "alerts": [
     {

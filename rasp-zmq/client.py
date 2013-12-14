@@ -1,7 +1,15 @@
 import sys
 import zmq
+from logger import logger
+from time import sleep
+import config
 
-port = "5556"
+config = config.load()['general']
+
+logger.name = __name__.upper()
+
+server = config['server']
+port = config['port']
 if len(sys.argv) > 1:
     port =  sys.argv[1]
     int(port)
@@ -14,15 +22,13 @@ if len(sys.argv) > 2:
 context = zmq.Context()
 socket = context.socket(zmq.SUB)
 
-print "Collecting updates from weather server..."
-socket.connect ("tcp://pi:%s" % port)
-
-if len(sys.argv) > 2:
-    socket.connect ("tcp://pi:%s" % port1)
+logger.info("Collecting updates from server...")
+socket.connect ("tcp://%s:%s" % (server,port))
 
 # Subscribe to zipcode, default is NYC, 10001
-topicfilter = "1000"
+topicfilter = "26"
 socket.setsockopt(zmq.SUBSCRIBE, topicfilter)
 
 while 1:
-	print socket.recv()
+	logger.info(socket.recv())
+	sleep(5)
