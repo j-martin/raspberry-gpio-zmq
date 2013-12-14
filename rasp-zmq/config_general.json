@@ -1,4 +1,6 @@
 {
+  "polling": "1",
+  "log_path": "./logs",
   "alerts": [
     {
       "sms": false,
