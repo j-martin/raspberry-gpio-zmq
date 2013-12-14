@@ -29,9 +29,9 @@ class polling(object):
 
     def register_server(self, port = "5556"):
 
-    	self.context = zmq.Context()
-		self.socket = self.context.socket(zmq.PUB)
-		self.socket.bind("tcp://*:%s" % port)
+        self.context = zmq.Context()
+        self.socket = self.context.socket(zmq.PUB)
+        self.socket.bind("tcp://*:%s" % port)
 
 
     def register_channels(self):
