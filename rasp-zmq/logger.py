@@ -14,9 +14,3 @@ console_output.setFormatter(formatter)
 
 logger.addHandler(console_output)
 logger.addHandler(file_output)
-
-# logger.debug('debug message')
-# logger.info('info message')
-# logger.warn('warn message')
-# logger.error('error message')
-# logger.critical('critical message')

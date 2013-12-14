@@ -1,0 +1,2240 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"font",
+				"font-family"
+			],
+			[
+				"dir",
+				"dir_http"
+			],
+			[
+				"cache",
+				"cache_path"
+			],
+			[
+				"file",
+				"file_output"
+			],
+			[
+				"js",
+				"json_output"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"i",
+				"italic"
+			],
+			[
+				"dir_",
+				"dir_http"
+			],
+			[
+				"json",
+				"json_encode"
+			],
+			[
+				"Re",
+				"Return"
+			],
+			[
+				"wal",
+				"fs.watchFile(filename);"
+			],
+			[
+				"pa",
+				"padding-bottom"
+			],
+			[
+				"padd",
+				"padding-bottom"
+			],
+			[
+				"h",
+				"height	Attr"
+			],
+			[
+				"time",
+				"time_a_week_ago"
+			],
+			[
+				"filem",
+				"filectime"
+			],
+			[
+				"thu",
+				"thumb"
+			],
+			[
+				"for",
+				"foreach	foreach …"
+			],
+			[
+				"con",
+				"content"
+			],
+			[
+				"devtrac",
+				"devtrack"
+			],
+			[
+				"Bu",
+				"BugID"
+			],
+			[
+				"temp",
+				"temp_file"
+			],
+			[
+				"url",
+				"urllib"
+			],
+			[
+				"relea",
+				"release"
+			],
+			[
+				"release",
+				"release_files"
+			],
+			[
+				"list",
+				"listdir"
+			],
+			[
+				"rel",
+				"release"
+			],
+			[
+				"re",
+				"replace"
+			],
+			[
+				"te",
+				"template"
+			],
+			[
+				"jira",
+				"jira_sync"
+			],
+			[
+				"ro",
+				"rows"
+			],
+			[
+				"que",
+				"query"
+			],
+			[
+				"bo",
+				"border-left"
+			],
+			[
+				"bor",
+				"border-top"
+			],
+			[
+				"devt",
+				"devtrack_id"
+			],
+			[
+				"fo",
+				"font-size"
+			],
+			[
+				"ma",
+				"margin-bottom"
+			],
+			[
+				"mar",
+				"margin-top"
+			],
+			[
+				"Fea",
+				"Features"
+			],
+			[
+				"iss",
+				"issuetype"
+			],
+			[
+				"com",
+				"component"
+			],
+			[
+				"las",
+				"last_components"
+			],
+			[
+				"co",
+				"components"
+			],
+			[
+				"comp",
+				"component"
+			],
+			[
+				"last_",
+				"last_component"
+			],
+			[
+				"aff",
+				"affectversion_override"
+			],
+			[
+				"affect",
+				"AffectVersion"
+			],
+			[
+				"version",
+				"version_override"
+			],
+			[
+				"new",
+				"new_data"
+			],
+			[
+				"client",
+				"client_tickets"
+			],
+			[
+				"lo",
+				"logger"
+			],
+			[
+				"cli",
+				"client"
+			],
+			[
+				"User",
+				"username"
+			],
+			[
+				"in",
+				"info"
+			],
+			[
+				"log",
+				"logger"
+			],
+			[
+				"j",
+				"jira_date"
+			],
+			[
+				"vot",
+				"voters_list"
+			],
+			[
+				"l",
+				"logger"
+			],
+			[
+				"es",
+				"else"
+			],
+			[
+				"devtra",
+				"devtrack_issue"
+			],
+			[
+				"dev",
+				"devtrack_issue"
+			],
+			[
+				"pass",
+				"password"
+			],
+			[
+				"DE",
+				"DEFAULT_PASSWORD"
+			],
+			[
+				"v",
+				"voters_list"
+			],
+			[
+				"per",
+				"preparing_list"
+			],
+			[
+				"clien",
+				"client_ticket"
+			],
+			[
+				"clie",
+				"client_conversion"
+			],
+			[
+				"email",
+				"email"
+			],
+			[
+				"em",
+				"email_old"
+			],
+			[
+				"emai",
+				"email_new"
+			],
+			[
+				"conv",
+				"conversion_list"
+			],
+			[
+				"tic",
+				"ticket_old"
+			],
+			[
+				"ti",
+				"ticket_new"
+			],
+			[
+				"val",
+				"values"
+			],
+			[
+				"conversion_list_",
+				"conversion_list_failed"
+			],
+			[
+				"goo",
+				"good_list"
+			],
+			[
+				"go",
+				"good"
+			],
+			[
+				"old",
+				"old_list"
+			],
+			[
+				"e",
+				"email"
+			],
+			[
+				"out",
+				"output_buffer  (variable)"
+			],
+			[
+				"se",
+				"search_issues  (function)"
+			],
+			[
+				"ge",
+				"getpass  (function)"
+			],
+			[
+				"otrs",
+				"otrs_list"
+			],
+			[
+				"n",
+				"new_otrs"
+			],
+			[
+				"releas",
+				"releases"
+			],
+			[
+				"nex",
+				"nexus_newbug"
+			],
+			[
+				"ur",
+				"url_base"
+			],
+			[
+				"proj",
+				"project"
+			],
+			[
+				"issue",
+				"issuetype"
+			],
+			[
+				"fil",
+				"filename_output"
+			],
+			[
+				"ex",
+				"extracting_images"
+			],
+			[
+				"image",
+				"image_file"
+			],
+			[
+				"base",
+				"basename"
+			],
+			[
+				"image_fi",
+				"image_filename"
+			],
+			[
+				"im",
+				"image_file"
+			],
+			[
+				"No",
+				"None"
+			],
+			[
+				"ac",
+				"accordion"
+			],
+			[
+				"if",
+				"ifmain	if __name__ == '__main__'"
+			],
+			[
+				"user",
+				"username"
+			],
+			[
+				"u",
+				"user"
+			],
+			[
+				"ssi",
+				"ssi_jira"
+			],
+			[
+				"get",
+				"getpass  (function)"
+			],
+			[
+				"add",
+				"addUserToGroup"
+			],
+			[
+				"p",
+				"projects  (function)"
+			],
+			[
+				"excep",
+				"Exception"
+			],
+			[
+				"html",
+				"html_footer"
+			],
+			[
+				"fin",
+				"filename_flat"
+			],
+			[
+				"r",
+				"row_name"
+			],
+			[
+				"Get",
+				"win32com.client.GetActiveObject"
+			],
+			[
+				"direc",
+				"directory_output"
+			],
+			[
+				"htm",
+				"html_table"
+			],
+			[
+				"last",
+				"last_modified_2013"
+			],
+			[
+				"tab",
+				"table_string"
+			],
+			[
+				"row",
+				"rows_string"
+			],
+			[
+				"fl",
+				"flatten_dict"
+			],
+			[
+				"icon",
+				"icon_details"
+			],
+			[
+				"ico",
+				"icon_details"
+			],
+			[
+				"dup",
+				"duplicated_string"
+			],
+			[
+				"du",
+				"duplicated_string"
+			],
+			[
+				"mat",
+				"match"
+			],
+			[
+				"sou",
+				"source_matches"
+			],
+			[
+				"source",
+				"source_matches"
+			],
+			[
+				"cus",
+				"custom_extra"
+			],
+			[
+				"at",
+				"attrs"
+			],
+			[
+				"sour",
+				"source_matches"
+			],
+			[
+				"Cli",
+				"Clipboard"
+			],
+			[
+				"IfNot",
+				"IfNotInString"
+			],
+			[
+				"try",
+				"try	Try/Except/Finally"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/Y/raspberry-gpio-zmq/rasp-zmq/config_general.json",
+			"settings":
+			{
+				"buffer_size": 102,
+				"line_ending": "Windows",
+				"name": "{\"alerts\":["
+			}
+		},
+		{
+			"file": "/Y/raspberry-gpio-zmq/rasp-zmq/config.py",
+			"settings":
+			{
+				"buffer_size": 204,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/Y/raspberry-gpio-zmq/rasp-zmq/tests_config.py",
+			"settings":
+			{
+				"buffer_size": 62,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "Packages/Java/JavaC.sublime-build",
+	"command_palette":
+	{
+		"height": 150.0,
+		"selected_items":
+		[
+			[
+				"pull",
+				"Git: Pull"
+			],
+			[
+				"push",
+				"Git: Push"
+			],
+			[
+				"commit",
+				"Git: Amend Commit"
+			],
+			[
+				"add",
+				"Git: Add Current File"
+			],
+			[
+				"statu",
+				"Git: Status"
+			],
+			[
+				"settings",
+				"Preferences: Settings - Default"
+			],
+			[
+				"sapce",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"quci",
+				"Git: Quick Commit"
+			],
+			[
+				"git add",
+				"Git: Add..."
+			],
+			[
+				"status",
+				"Git: Status"
+			],
+			[
+				"prett",
+				"Pretty JSON: Reformat (Pretty Print) JSON"
+			],
+			[
+				"disa",
+				"Package Control: Disable Package"
+			],
+			[
+				"prety",
+				"Pretty JSON: Reformat (Pretty Print) JSON"
+			],
+			[
+				"pretyy",
+				"Pretty JSON: Reformat (Pretty Print) JSON"
+			],
+			[
+				"qu",
+				"Git: Quick Commit"
+			],
+			[
+				"c++",
+				"Set Syntax: C++"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"enab",
+				"Package Control: Enable Package"
+			],
+			[
+				"quic",
+				"AutoFileName: Quick Settings"
+			],
+			[
+				"less",
+				"Set Syntax: LESS"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"pre",
+				"Pretty JSON: Reformat (Pretty Print) JSON"
+			],
+			[
+				"pret",
+				"Pretty JSON: Reformat (Pretty Print) JSON"
+			],
+			[
+				"refresh",
+				"Project: Refresh Folders"
+			],
+			[
+				"r",
+				"Emmet: Reload Extensions"
+			],
+			[
+				"refres",
+				"Project: Refresh Folders"
+			],
+			[
+				"json",
+				"Pretty JSON: Reformat (Pretty Print) JSON"
+			],
+			[
+				"resh",
+				"Project: Refresh Folders"
+			],
+			[
+				"rena",
+				"File: Rename"
+			],
+			[
+				"enabl",
+				"Package Control: Enable Package"
+			],
+			[
+				"jsh",
+				"JSHint"
+			],
+			[
+				"rever",
+				"File: Revert"
+			],
+			[
+				"hint",
+				"JSHint: Set Linting Preferences"
+			],
+			[
+				"space",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"js",
+				"JSHint: Set Linting Preferences"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"user",
+				"Preferences: Settings - User"
+			],
+			[
+				"pretty",
+				"HTMLPrettify: Set Plugin Options"
+			],
+			[
+				"enco",
+				"URL Encode"
+			],
+			[
+				"ref",
+				"Project: Refresh Folders"
+			],
+			[
+				"setting",
+				"Preferences: Settings - User"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"rev",
+				"File: Revert"
+			],
+			[
+				"revert",
+				"File: Revert"
+			],
+			[
+				"ren",
+				"File: Rename"
+			],
+			[
+				"move",
+				"File: Move"
+			],
+			[
+				"reve",
+				"File: Revert"
+			],
+			[
+				"intsa",
+				"Package Control: Install Package"
+			],
+			[
+				"base",
+				"Base Encoding: Base64 Encode Selection(s)"
+			],
+			[
+				"deco",
+				"URL Decode"
+			],
+			[
+				"decod",
+				"URL Decode"
+			],
+			[
+				"encode",
+				"URL Encode"
+			],
+			[
+				"dis",
+				"Package Control: Disable Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Disable Package"
+			],
+			[
+				"open",
+				"File: Open In Browser - Production Server"
+			],
+			[
+				"php",
+				"Set Syntax: PHP"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"htm",
+				"Set Syntax: HTML"
+			],
+			[
+				"copy",
+				"File: Copy Path"
+			],
+			[
+				"python",
+				"Set Syntax: Python"
+			],
+			[
+				"path",
+				"File: Copy Path"
+			],
+			[
+				"sql",
+				"Set Syntax: SQL"
+			],
+			[
+				"brwo",
+				"File: Open In Browser - Production Server"
+			],
+			[
+				"tidy",
+				"TidyHTML"
+			],
+			[
+				"ti",
+				"TidyHTML"
+			],
+			[
+				"t",
+				"TidyHTML"
+			],
+			[
+				"inden",
+				"Indent XML"
+			],
+			[
+				"xml",
+				"Set Syntax: XML"
+			],
+			[
+				"inde",
+				"Auto indent"
+			],
+			[
+				"css",
+				"Set Syntax: CSS"
+			],
+			[
+				"pytho",
+				"Set Syntax: Python"
+			],
+			[
+				"pyth",
+				"SublimeREPL: Python"
+			],
+			[
+				"sq",
+				"FormatSQL: Format SQL statement"
+			],
+			[
+				"coy",
+				"File: Copy Name"
+			],
+			[
+				"pack",
+				"Package Control: List Packages"
+			],
+			[
+				"lint",
+				"CSSLint: Run CSSLint"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"cop",
+				"File: Copy Path"
+			],
+			[
+				"error",
+				"SublimeLinter: Show Error List"
+			],
+			[
+				"name",
+				"File: Copy Name"
+			],
+			[
+				"ind",
+				"Indent JSON"
+			],
+			[
+				"tab",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"in",
+				"Indent JSON"
+			],
+			[
+				"jsn",
+				"Indent JSON"
+			],
+			[
+				"indent",
+				"Indent JSON"
+			],
+			[
+				"ever",
+				"Evernote Settings"
+			],
+			[
+				"pyt",
+				"Set Syntax: Python"
+			],
+			[
+				"co",
+				"File: Copy Path"
+			],
+			[
+				"renam",
+				"File: Rename"
+			],
+			[
+				"gro",
+				"Set Syntax: Groovy"
+			],
+			[
+				"py",
+				"Set Syntax: Python"
+			],
+			[
+				"form",
+				"FormatSQL: Format SQL statement"
+			],
+			[
+				"ipy",
+				"SublimeREPL: Python - IPython"
+			],
+			[
+				"repl py",
+				"SublimeREPL: Python - IPython"
+			],
+			[
+				"son",
+				"Indent JSON"
+			],
+			[
+				"tid",
+				"TidyHTML"
+			],
+			[
+				"file copy",
+				"File: Copy Path From Project Encoded"
+			],
+			[
+				"file cop",
+				"File: Copy Path as URI"
+			],
+			[
+				"f",
+				"File: Copy Path"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"ty",
+				"TidyHTML"
+			],
+			[
+				"tit",
+				"TidyHTML"
+			],
+			[
+				"hml",
+				"TidyHTML"
+			],
+			[
+				"java",
+				"Format: Javascript"
+			],
+			[
+				"auto",
+				"Set Syntax: AutoHotKey"
+			],
+			[
+				"dar",
+				"Set Syntax: Dart"
+			],
+			[
+				"upda",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"jque js",
+				"Snippet: jQuery.ajaxSetup"
+			],
+			[
+				"jqu",
+				"Snippet: jQuery Plugin Boilerplate"
+			],
+			[
+				"jq js",
+				"Snippet: jQuery.parseJSON"
+			],
+			[
+				"jqe",
+				"Snippet: jQuery.ajax"
+			],
+			[
+				"jq",
+				"Snippet: A basic jQuery selector"
+			],
+			[
+				"packag",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: insta",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"lisp",
+				"Set Syntax: Lisp"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"p8",
+				"User: Python PEP8 Autoformat"
+			],
+			[
+				"Package Control: install",
+				"Package Control: Install Package"
+			],
+			[
+				"Pack	",
+				"Package Control: Install Package"
+			],
+			[
+				"sy sql",
+				"Set Syntax: SQL (Rails)"
+			],
+			[
+				"mini",
+				"View: Toggle Minimap"
+			]
+		],
+		"width": 464.0
+	},
+	"console":
+	{
+		"height": 465.0,
+		"history":
+		[
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/JMA/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Y/raspberry-gpio-zmq/rasp-zmq/tests_config.py",
+		"/Y/raspberry-gpio-zmq/rasp-zmq/__init__.py",
+		"/Y/raspberry-gpio-zmq/rasp-zmq/config.py",
+		"/Y/raspberry-gpio-zmq/rasp-zmq/config.json",
+		"/Y/raspberry-gpio-zmq/requirements.txt",
+		"/Y/raspberry-gpio-zmq/README.md",
+		"//pi/shared/raspberry-gpio-zmq/requirements.txt",
+		"/E/Git/PythonORMSleepy/requirements.txt",
+		"/C/Users/JMA/Documents/Arduino/Blink/Blink.ino",
+		"//pi/shared/ptest/switch12.py",
+		"/E/Git/j-martin.github.io/public/js/min.js",
+		"/E/Git/springspring/Gruntfile.js",
+		"/E/Git/springspring/src/main/webapp/views/login.html",
+		"/E/Git/springspring/src/main/webapp/styles/documentation.css",
+		"/E/Dropbox/Work/Clipboard.txt",
+		"/E/Git/photocode/app/www/admin/common.php",
+		"/E/Git/photocode/app/www/admin/change_pwd.php",
+		"/E/Git/photocode/app/www/admin/index.php",
+		"/E/Git/photocode/app/www/admin/upload.php",
+		"/E/Git/photocode/app/private/auth.php",
+		"/E/Git/photocode/app/www/admin/authentication.php",
+		"/E/Git/j-martin.github.io/package.json",
+		"/E/Shared/Sublime/Website.sublime-project",
+		"/C/Users/JMA/Documents/GitHub/j-martin.github.io/less/main.less",
+		"/C/Users/JMA/Documents/GitHub/j-martin.github.io/index.html",
+		"/E/Git/wedding/public/index.html",
+		"/E/Git/j-martin.github.io/.git/config",
+		"/E/Dropbox/Work/SSI/2014 - Changed Description - Message.txt",
+		"/E/Git/wedding/.gitignore",
+		"/E/Git/wedding/.é",
+		"/C/Users/JMA/Documents/workspace-sts-3.4.0.RELEASE/gs-spring-boot-initial/pom.xml",
+		"/C/Users/JMA/Documents/workspace-sts-3.4.0.RELEASE/gs-spring-boot-complete/pom.xml",
+		"/C/Users/JMA/Documents/tmp/pom.xml",
+		"/C/Users/JMA/Documents/tmp/src/main/java/SampleController.java",
+		"/C/Users/JMA/Documents/GitHub/j-martin.github.io/pages/about.html",
+		"/C/Users/JMA/Desktop/config/uhttpd",
+		"/C/Users/JMA/Desktop/config/6relayd",
+		"/C/Users/JMA/Desktop/config/ddns",
+		"/C/Users/JMA/Desktop/config/wireless",
+		"/C/Users/JMA/Desktop/config/ucitrack",
+		"/C/Users/JMA/Desktop/config/ubootenv",
+		"/C/Users/JMA/Desktop/config/system",
+		"/C/Users/JMA/Desktop/config/network",
+		"/C/Users/JMA/Desktop/config/dhcp",
+		"/C/Users/JMA/Documents/GitHub/j-martin.github.io/.htaccess",
+		"/E/Shared/Servers.json",
+		"/C/Users/JMA/Desktop/config/luci",
+		"/C/Users/JMA/Desktop/config/dropbear",
+		"/C/Users/JMA/Desktop/config/firewall",
+		"/C/Users/JMA/AppData/Local/Temp/7zOC2C7.tmp/dhcp",
+		"/C/Users/JMA/AppData/Local/Temp/7zO97EE.tmp/network",
+		"/C/Users/JMA/Documents/GitHub/j-martin.github.io/pages/photo.html",
+		"/C/Users/JMA/Documents/GitHub/j-martin.github.io/js/controllers.js",
+		"/Y/website/img/shared.php",
+		"/Y/website/img/photo.php",
+		"/C/Users/JMA/Documents/GitHub/j-martin.github.io/json/shared.php",
+		"/C/Users/JMA/Documents/GitHub/j-martin.github.io/pages/render.html",
+		"/C/Users/JMA/Documents/GitHub/j-martin.github.io/json/photo.php",
+		"/C/Users/JMA/Downloads/Ftp git@jmartin.ca.xml",
+		"/Y/website/pages/about.html",
+		"/C/Users/JMA/Documents/GitHub/j-martin.github.io/css/bootstrap-theme.css",
+		"/C/Users/JMA/Documents/GitHub/j-martin.github.io/js/bootstrap.min.js",
+		"/Y/website/README.md",
+		"/Y/website/js/controllers.js",
+		"/C/Users/JMA/Documents/GitHub/j-martin.github.io/CNAME",
+		"/Y/website/params.json",
+		"/Y/website/json/shared.php",
+		"/Y/website/json/render.php",
+		"/Y/website/pages/render.html",
+		"/Y/website/.gitignore",
+		"/Y/website/json/photo.php",
+		"/Y/website/index.html",
+		"/Y/website/pages/photo.html",
+		"/C/Users/JMA/Downloads/angular.js",
+		"/Y/website/css/more.css",
+		"/C/Users/JMA/AppData/Roaming/Sublime Text 3/Packages/JSHint Gutter/.jshintrc",
+		"/Y/website/pages/home.html",
+		"/C/Users/JMA/AppData/Local/Temp/fz3temp-1/c.htaccess",
+		"/C/Users/JMA/AppData/Local/Temp/fz3temp-1/.htaccess",
+		"/C/Users/JMA/Downloads/mykey",
+		"/E/Shared/testing.pem",
+		"/C/Users/JMA/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Users/JMA/AppData/Roaming/Sublime Text 3/Packages/HTML-CSS-JS Prettify/HTMLPrettify.sublime-settings",
+		"/Z/website/css/more.css",
+		"/Z/website/index.html",
+		"/Z/website/js/controllers.js",
+		"/Z/website/pages/render.html",
+		"/Z/website/pages/photo.html",
+		"/Z/website/pages/about.html",
+		"/Z/website/pages/home.html",
+		"/C/Users/JMA/AppData/Roaming/Sublime Text 3/Packages/HTML-CSS-JS Prettify/.jsbeautifyrc",
+		"/C/Users/JMA/SkyDrive/Documents/Starter Template for Bootstrap.htm",
+		"/Z/servers/main/pages/about.html",
+		"/C/Users/JMA/Desktop/movieplayervista.py",
+		"/C/Users/JMA/Desktop/helloworld.py",
+		"/Z/website/dns.json",
+		"/Z/website/dns.html",
+		"/Z/website/json/photo.php",
+		"/Z/website/json/render.php",
+		"/Y/json/error_log",
+		"/Y/img/rendering/.htaccess",
+		"/Z/website/pages/photo.php",
+		"/C/Users/JMA/Desktop/contact.html",
+		"/C/Users/JMA/Desktop/index.html",
+		"/Z/website/js/app.js",
+		"/Z/website/cache/h2o_dad0ed2ac1ef3da63f75fd3841d26b57",
+		"/Z/website/.htaccess",
+		"/Z/website/js/more.js",
+		"/Z/website/.gitignore",
+		"/Z/website/template/layout.html",
+		"/C/Users/JMA/Desktop/script.js",
+		"/Z/website/index.php",
+		"/S/website/test/pages/contact.html",
+		"/S/website/test/pages/about.html",
+		"/S/website/test/pages/home.html",
+		"/S/website/template/index.html",
+		"/S/website/test/script.js",
+		"/S/website/test/index.html",
+		"/E/Dropbox/AHK/GEN_Functions.ahk",
+		"/E/Dropbox/AHK/KeyboardAutoType_JMA.ahk",
+		"/C/Users/JMA/AppData/Local/Temp/e5654326-cecf-49bf-b51d-9f9b0068bd09/web_backup.sh.txt",
+		"/E/Website/glassfish4/glassfish/domains/domain1/docroot/index.html",
+		"/S/website/about.php",
+		"/S/website/.git/config",
+		"/S/website/.git/description",
+		"/S/website/.git/index",
+		"/S/website/.git/HEAD"
+	],
+	"find":
+	{
+		"height": 36.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"*.py",
+			"*.ahk",
+			"",
+			"label-danger",
+			"",
+			"*.py",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"space",
+			"window",
+			"port",
+			"[\"open\",\"closed\"]",
+			"closed",
+			"open",
+			":\"w",
+			":",
+			":\":",
+			"window",
+			",",
+			"div",
+			"       0x1         0x2         ",
+			"json/",
+			"\\",
+			"php",
+			"path",
+			"files",
+			"json_output",
+			"file_output",
+			"time_a_week_ago",
+			"thumb",
+			"                                                                                                 ",
+			"zero",
+			"mind",
+			"http://jmartin.ca",
+			"jmartin.ca/",
+			"ref=\"#",
+			"f=\"#",
+			"href=\"#",
+			"fa-5",
+			"glyphicon",
+			"span",
+			"<\\n",
+			"li>",
+			"ul>",
+			"col-md-6\">",
+			"\\s{3}<em>",
+			"></span>",
+			"span class=\"glyphicon glyphicon",
+			"span",
+			"<h2>",
+			"dd",
+			"dt",
+			"dd",
+			"-5",
+			"h3",
+			"3",
+			"2",
+			"md-6",
+			"3.0.0",
+			"bootstrap",
+			"<!-",
+			"md-3",
+			"col-3",
+			"ul>",
+			"li>",
+			"li",
+			"</dt><dd>",
+			"<dd>, ",
+			"ul>",
+			"ul",
+			"dl>",
+			"<li><dt",
+			"/li>",
+			"li",
+			"Li",
+			"li",
+			"</dt>",
+			"strong",
+			", ",
+			"<li>.*\\,",
+			"<li>.+\\,",
+			"<li>",
+			" - ",
+			"</li>",
+			"h3",
+			"vendor",
+			"local",
+			"url",
+			"name",
+			"\"name\"",
+			"url",
+			"webserver",
+			" \"type\": ",
+			"ftps",
+			")\"",
+			"(",
+			"\"uri\" :",
+			"\"class\" : ",
+			"\\}\\n",
+			"}\\n",
+			"</ul>",
+			"<ul>",
+			"<h2>",
+			"</ul>}",
+			"\"url\"",
+			"<li>",
+			"</a></li>",
+			"\">",
+			"<a href=",
+			"10.0.0.10",
+			" (",
+			"http://",
+			"</li>",
+			"<li>",
+			"<li></li>",
+			"int",
+			"duckdns.org",
+			"jm.duckdns.org",
+			"ghs.google.com",
+			"2",
+			",",
+			"0.25",
+			"0.5",
+			"cache",
+			"col-md-",
+			"md-",
+			"about",
+			"Contact",
+			"contact",
+			"<!--",
+			"scotchApp",
+			" \\  ",
+			" \\ ",
+			"66.249.66.77",
+			"96.49.246.187",
+			"web_backup"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"<ac:image ac:thumbnail=\"true\" ac:width=\"300\">",
+			"<ac:image ac:thumbnail=\"true\" ac:width=\"300\"",
+			"ac:image ac:thumbnail=\"true\" ac:width=\"300\"",
+			"",
+			"b.",
+			"\"",
+			"\",\\n\"",
+			"<td class=\"highlight-green\" data-highlight-colour=\"green\">Yes</td>",
+			"\"],[",
+			"\",\"",
+			"ControlSend",
+			"SendInput",
+			"alert-danger",
+			"label-danger",
+			"",
+			"\\n",
+			"",
+			"vm-2008otrs.shipconstructor.com",
+			".ssi-corporate.com",
+			"</i> Nexus",
+			"</i>  Nexus",
+			"versionSort",
+			" ",
+			",",
+			" ",
+			"$1,\\s$2",
+			"$1, $2",
+			"(1), (2)",
+			",",
+			" ",
+			"",
+			" - ",
+			" ",
+			",",
+			"\"",
+			" ",
+			"	",
+			"self.logger(",
+			",",
+			"",
+			"', '",
+			"Return",
+			"46",
+			"48",
+			"3",
+			"44",
+			"47",
+			", ",
+			" ",
+			", ",
+			"]",
+			"','",
+			" "
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/Y/raspberry-gpio-zmq/rasp-zmq/config_general.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 102,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								62,
+								62
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"auto_name": "{\"alerts\":[",
+							"bh_regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close"
+							],
+							"syntax": "Packages/JavaScript/JSON.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/Y/raspberry-gpio-zmq/rasp-zmq/config.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 204,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								190,
+								204
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close"
+							],
+							"syntax": "Packages/Python/Python.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/Y/raspberry-gpio-zmq/rasp-zmq/tests_config.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 62,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								62,
+								62
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close"
+							],
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 28.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.csslint_result_view":
+	{
+		"height": 124.0
+	},
+	"output.exec":
+	{
+		"height": 333.0
+	},
+	"output.git":
+	{
+		"height": 229.0
+	},
+	"output.webdav":
+	{
+		"height": 118.0
+	},
+	"project": "raspberry-gpio-zmq.sublime-project",
+	"replace":
+	{
+		"height": 52.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"about",
+				"pages\\about.html"
+			],
+			[
+				"contr",
+				"js\\controllers.js"
+			],
+			[
+				"contro",
+				"js\\controllers.js"
+			],
+			[
+				"hoto",
+				"json\\photo.php"
+			],
+			[
+				"render",
+				"json\\render.php"
+			],
+			[
+				"ignore",
+				".gitignore"
+			],
+			[
+				"more",
+				"css\\more.css"
+			],
+			[
+				"photo",
+				"json\\photo.php"
+			],
+			[
+				"rend",
+				"pages\\render.html"
+			],
+			[
+				"inde",
+				"index.html"
+			],
+			[
+				"home",
+				"pages\\home.html"
+			],
+			[
+				"app",
+				"js\\app.js"
+			],
+			[
+				"phot",
+				"pages\\photo.php"
+			],
+			[
+				"jma",
+				"AHK\\KeyboardAutoType_JMA.ahk"
+			],
+			[
+				"gen",
+				"AHK\\GEN_Functions.ahk"
+			],
+			[
+				"key",
+				"AHK\\KeyboardAutoType_JMA.ahk"
+			],
+			[
+				"la",
+				"DavWWWRoot\\template\\layout.html"
+			],
+			[
+				"keyb",
+				"AHK\\KeyboardAutoType_JMA.ahk"
+			],
+			[
+				"impo",
+				"Py/ssi_jira_import.py"
+			],
+			[
+				"nexudevf",
+				"Py/sql/ssi_nexus_devtrack_full_list.sql"
+			],
+			[
+				"jira",
+				"Py/ssi_jira.py"
+			],
+			[
+				"devtraisu",
+				"Py/sql/ssi_devtrack_issues.sql"
+			],
+			[
+				"import",
+				"Py/ssi_jira_import.py"
+			],
+			[
+				"web",
+				"Py/ssi_web.py"
+			],
+			[
+				"otrs",
+				"Py/ssi_otrs.py"
+			],
+			[
+				"white",
+				"Py/media/whitepaper.html"
+			],
+			[
+				"jiraweb",
+				"Py/ssi_jira_web.py"
+			],
+			[
+				"devtrasql",
+				"Py/sql/ssi_devtrack_issues.sql"
+			],
+			[
+				"conflue",
+				"Py/ssi_confluence.py"
+			],
+			[
+				"ssisoa",
+				"Py/ssi_jira_soap.py"
+			],
+			[
+				"hotdt",
+				"AHK/Hotkeys_DT.ahk"
+			],
+			[
+				"dt",
+				"AHK/Hotkeys_DT.ahk"
+			],
+			[
+				"ah",
+				"AHK/Hotkeys.ahk"
+			],
+			[
+				"closing_stuff2",
+				"Py/sql/custom/closing_stuff2.sql"
+			],
+			[
+				"release",
+				"Py/json/ssi_releases.json"
+			],
+			[
+				"funct",
+				"AHK/DT_Functions.ahk"
+			],
+			[
+				"hot",
+				"AHK/Hotkeys_DT.ahk"
+			],
+			[
+				"ssi",
+				"Py/ssi.py"
+			],
+			[
+				"devissue",
+				"Py/sql/ssi_devtrack_issues.sql"
+			],
+			[
+				"client",
+				"Py/tools/clientcleanup.py"
+			],
+			[
+				"imp",
+				"Py/ssi_jira_import.py"
+			],
+			[
+				"nexusdev",
+				"Py/sql/ssi_nexus_devtrack.sql"
+			],
+			[
+				"closing",
+				"Py/sql/custom/closing_stuff2.sql"
+			],
+			[
+				"keybo",
+				"AHK/KeyboardAutoType_JMA.ahk"
+			],
+			[
+				"devtracksql",
+				"Py/sql/ssi_devtrack_issues.sql"
+			],
+			[
+				"devweb",
+				"Py/ssi_devtrack_web.py"
+			],
+			[
+				"whitesql",
+				"Py/sql/ssi_nexus_whitepaper.sql"
+			],
+			[
+				"dev",
+				"Py/ssi_devtrack_web.py"
+			],
+			[
+				"whitepsql",
+				"Py/sql/ssi_nexus_whitepaper.sql"
+			],
+			[
+				"devtraweb",
+				"Py/ssi_devtrack_web.py"
+			],
+			[
+				"otrsrel",
+				"Py/json/ssi_devtrack_reporters_results.json"
+			],
+			[
+				"sqlnexus",
+				"Py/sql/ssi_nexus_issues.sql"
+			],
+			[
+				"soap",
+				"Py/testing/jira_soap_methods.txt"
+			],
+			[
+				"mass",
+				"Py/nexus_mass_import.py"
+			],
+			[
+				"ssi_nexus_devtrack_full_list",
+				"Py/sql/ssi_nexus_devtrack_full_list.sql"
+			],
+			[
+				"devtrak",
+				"Py/ssi_devtrack.py"
+			],
+			[
+				"sqlnex",
+				"Py/sql/ssi_nexus_devtrack.sql"
+			],
+			[
+				"clean",
+				"Py/json/clientcleanup.py"
+			],
+			[
+				"",
+				"Py/json/client_otrs_to_nexus_tickets.json"
+			],
+			[
+				"nex",
+				"Py/nexus_faking_votes.py"
+			],
+			[
+				"old",
+				"Py/json/list_old.json"
+			],
+			[
+				"new",
+				"Py/json/list_new.json"
+			],
+			[
+				"vos",
+				"Py/nexus_faking_votes.py"
+			],
+			[
+				"devtra",
+				"Py/ssi_devtrack.py"
+			],
+			[
+				"jiraimp",
+				"Py/ssi_jira_import.py"
+			],
+			[
+				"jiraim",
+				"Py/ssi_jira_import.py"
+			],
+			[
+				"search",
+				"Py/ssi_search.py"
+			],
+			[
+				"jirawb",
+				"Py/ssi_jira_web.py"
+			],
+			[
+				"nexim",
+				"Py/nexus_mass_import.py"
+			],
+			[
+				"newot",
+				"Py/json/ssi_release_new_otrs.json"
+			],
+			[
+				"releajs",
+				"Py/json/ssi_releases.json"
+			],
+			[
+				"ssiweb",
+				"Py/ssi_jira_web.py"
+			],
+			[
+				"jirawe",
+				"Py/ssi_jira_web.py"
+			],
+			[
+				"soa",
+				"Py/testing/jira_soap_methods.txt"
+			],
+			[
+				"hotk",
+				"AHK/Hotkeys.ahk"
+			],
+			[
+				"devseql",
+				"Py/sql/ssi_devtrack_issues.sql"
+			],
+			[
+				"devwe",
+				"Py/ssi_devtrack_web.py"
+			],
+			[
+				"nexu",
+				"Py/nexus_quick_connect.py"
+			],
+			[
+				"quick",
+				"Py/nexus_quick_connect.cmd"
+			],
+			[
+				"otrssql",
+				"Py/sql/ssi_otrs.sql"
+			],
+			[
+				"head",
+				"Py/media/_header.html"
+			],
+			[
+				"user",
+				"Py/json/ssi_jira_tools_users.json"
+			],
+			[
+				"cred",
+				"Py/json/ssi_credentials.json"
+			],
+			[
+				"out",
+				"Py/testing/out.txt"
+			],
+			[
+				"sync",
+				"Py/media/jira_sync.html"
+			],
+			[
+				"dbimport",
+				"Py/testing/dbg_jira_import.py"
+			],
+			[
+				"regres",
+				"Py/sql/ssi_regression_latest_results.sql"
+			],
+			[
+				"header",
+				"Py/media/_header.html"
+			],
+			[
+				"foot",
+				"Py/media/_footer.html"
+			],
+			[
+				"regre",
+				"Py/ssi_regression.py"
+			],
+			[
+				"latest",
+				"Py/sql/ssi_regression_latest_results.sql"
+			],
+			[
+				"testhi",
+				"Py/sql/ssi_regression_test_history_results.sql"
+			],
+			[
+				"label",
+				"Py/media/jira_labeler.html"
+			],
+			[
+				"con",
+				"AHK/CONF_Functions.ahk"
+			],
+			[
+				"impor",
+				"Py/ssi_jira_import.py"
+			],
+			[
+				"ge",
+				"AHK/GEN_Functions.ahk"
+			],
+			[
+				"icon",
+				"Py/testing/ico_convert.py"
+			],
+			[
+				"find",
+				"Py/testing/find_duplicates.py"
+			],
+			[
+				"conv",
+				"Py/testing/ico_convert.py"
+			],
+			[
+				"wiki",
+				"AHK/KeyboardAutoType_Wiki.ahk"
+			],
+			[
+				"seach",
+				"Py/media/search.html"
+			],
+			[
+				"index",
+				"Py/media/index.html"
+			],
+			[
+				"dt_fun",
+				"AHK/DT_Functions.ahk"
+			],
+			[
+				"conf",
+				"AHK/CONF_Functions.ahk"
+			],
+			[
+				"auto",
+				"AHK/AutoCorrect.ahk"
+			],
+			[
+				"ke",
+				"AHK/KeyboardAutoType_JMA.ahk"
+			],
+			[
+				"archive",
+				"Py/media/archive.html"
+			],
+			[
+				"compo",
+				"Py/json/ssi_components.json"
+			],
+			[
+				"keybs",
+				"AHK/KeyboardAutoType_SSI.ahk"
+			],
+			[
+				"keyboa",
+				"AHK/KeyboardAutoType_Wiki.ahk"
+			],
+			[
+				"linked",
+				"Py/sql/custom/nexus_linked_between_two_projects.sql"
+			],
+			[
+				"ahk",
+				"AHK/Hotkeys.ahk"
+			],
+			[
+				"conflu",
+				"Py/ssi_confluence.py"
+			],
+			[
+				"reg",
+				"Py/ssi_regression.py"
+			],
+			[
+				"sea",
+				"Py/ssi_search.py"
+			],
+			[
+				"devtrawe",
+				"Py/ssi_devtrack_web.py"
+			],
+			[
+				"ssisear",
+				"Py/ssi_search.py"
+			],
+			[
+				"keby",
+				"AHK/KeyboardAutoType_JMA.ahk"
+			],
+			[
+				"searc",
+				"Py/media/search.html"
+			],
+			[
+				"issues",
+				"Py/sql/ssi_devtrack_issues.sql"
+			],
+			[
+				"issue",
+				"Py/sql/ssi_devtrack_issues.sql"
+			],
+			[
+				"sear",
+				"Py/ssi_search.py"
+			],
+			[
+				"devtrac",
+				"Py/ssi_devtrack.py"
+			],
+			[
+				"ssijirawe",
+				"Py/ssi_jira_web.py"
+			],
+			[
+				"nexusiss",
+				"Py/sql/ssi_nexus_issues.sql"
+			],
+			[
+				"ssijira",
+				"Py/ssi_jira.py"
+			],
+			[
+				"lab",
+				"Py/media/jira_labeler.html"
+			],
+			[
+				"scre",
+				"AHK/ScreenCapture.ahk.txt"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/F/ShipConstructor.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 258.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

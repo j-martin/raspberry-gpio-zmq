@@ -1,19 +1,53 @@
 import zmq
+import logger
 import sys
 import time
+import RPi.GPIO as GPIO
 
-port = "5556"
-if len(sys.argv) > 1:
-    port =  sys.argv[1]
-    int(port)
 
-context = zmq.Context()
-socket = context.socket(zmq.PUB)
-socket.bind("tcp://*:%s" % port)
+class polling(object):
 
-while True:
-    topic = random.randrange(9999,10005)
-    messagedata = random.randrange(1,215) - 80
-    print "%d %d" % (topic, messagedata)
-    socket.send("%d %d" % (topic, messagedata))
-    time.sleep(1)
+    """docstring for polling inputs of the GPIO. The channels should be specified."""
+
+    def __init__(self, channels=[24, 26]):
+        super(polling, self).__init__()
+        self.channels = channels
+        self.register_server()
+        self.register_channels()
+
+    def event_callback(self, channel):
+        """Function that runs when an input changes."""
+
+        if GPIO.input(channel) == 1:
+            message = ('%s has been closed.' % channel)
+
+        else:
+            message = ('%s has been opened.' % channel)
+
+        logger.logger.info(message)
+        self.socket.send("%d" % (message)
+
+    def register_server(self, port = "5556"):
+
+    	self.context = zmq.Context()
+		self.socket = self.context.socket(zmq.PUB)
+		self.socket.bind("tcp://*:%s" % port)
+
+
+    def register_channels(self):
+
+        GPIO.setmode(GPIO.BOARD)
+        for channel in self.channels:
+            GPIO.setup(channel, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
+            GPIO.add_event_detect(
+                channel, GPIO.BOTH, callback=self.event_callback)
+        return 0
+
+    def run(self):
+        """Infinite loop"""
+        while True:
+            time.sleep(60)
+
+if __name__ == '__main__':
+    m = polling()
+    m.run()
