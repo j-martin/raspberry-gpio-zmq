@@ -17,8 +17,8 @@ def reformat_mapping(data):
 	for item in data:
 
 		pin = item['pin']
-		data.pop('pin')
+		item.pop('pin')
 
-		processed_data.update(pin : data)
+		processed_data.update({pin : item})
 
 	return processed_data
