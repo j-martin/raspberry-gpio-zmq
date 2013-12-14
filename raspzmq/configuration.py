@@ -10,15 +10,16 @@ def load():
 
     return config
 
+
 def reformat_mapping(data):
-	
-	processed_data = {}
 
-	for item in data:
+    processed_data = {}
 
-		pin = item['pin']
-		item.pop('pin')
+    for item in data:
 
-		processed_data.update({pin : item})
+        pin = item['pin']
+        item.pop('pin')
 
-	return processed_data
+        processed_data.update({pin: item})
+
+    return processed_data

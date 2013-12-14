@@ -14,6 +14,7 @@ except ImportError:
 config = config.load()
 logger.name = __name__.upper()
 
+
 class polling(object):
 
     """docstring for polling inputs of the GPIO. The channels should be specified."""

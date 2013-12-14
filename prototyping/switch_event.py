@@ -12,7 +12,6 @@ class monitor(object):
         self.register_channels()
 
     def event_callback(self, channel):
-
         """Function that runs when an input changes."""
 
         if GPIO.input(channel) == 1:
@@ -30,7 +29,6 @@ class monitor(object):
         return 0
 
     def run(self):
-
         """Infinite loop"""
         while True:
             time.sleep(60)
