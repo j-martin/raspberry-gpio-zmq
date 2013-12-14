@@ -1,16 +1,23 @@
 import logging
 
-logger = logging.getLogger('GPIO')
-logger.setLevel(logging.DEBUG)
 
-console_output = logging.StreamHandler()
-console_output.setLevel(logging.DEBUG)
+def create(name, log_path="./"):
 
-file_output = logging.FileHandler('out.log')
-formatter = logging.Formatter(
-    '%(asctime)s - %(name)s - %(levelname)s - %(message)s')
-file_output.setFormatter(formatter)
-console_output.setFormatter(formatter)
+    log_filename = log_path + name '.log'
 
-logger.addHandler(console_output)
-logger.addHandler(file_output)
+    logger = logging.getLogger(name)
+    logger.setLevel(logging.DEBUG)
+
+    console_output = logging.StreamHandler()
+    console_output.setLevel(logging.DEBUG)
+
+    file_output = logging.FileHandler(log_filename)
+    formatter = logging.Formatter(
+        '%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+    file_output.setFormatter(formatter)
+    console_output.setFormatter(formatter)
+
+    logger.addHandler(console_output)
+    logger.addHandler(file_output)
+
+    return logger
