@@ -6,7 +6,7 @@ logger.setLevel(logging.DEBUG)
 console_output = logging.StreamHandler()
 console_output.setLevel(logging.DEBUG)
 
-file_output = logging.FileHandler(config['log_path'])
+file_output = logging.FileHandler('out.log')
 formatter = logging.Formatter(
     '%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 file_output.setFormatter(formatter)
