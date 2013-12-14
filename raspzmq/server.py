@@ -2,7 +2,7 @@ import zmq
 from logger import logger
 import sys
 import time
-import config
+import configuration
 
 try:
     import RPi.GPIO as GPIO
@@ -11,7 +11,7 @@ except ImportError:
     exit()
 
 
-config = config.load()
+config = configuration.load()
 logger.name = __name__.upper()
 
 

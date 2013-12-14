@@ -2,33 +2,39 @@ import sys
 import zmq
 from logger import logger
 from time import sleep
-import config
+import configuration
 
-config = config.load()['general']
 
-logger.name = __name__.upper()
+class subscriber(object):
 
-server = config['server']
-port = config['port']
-if len(sys.argv) > 1:
-    port = sys.argv[1]
-    int(port)
+    """docstring for subscriber"""
 
-if len(sys.argv) > 2:
-    port1 = sys.argv[2]
-    int(port1)
+    def __init__(self):
+        super(subscriber, self).__init__()
 
-# Socket to talk to server
-context = zmq.Context()
-socket = context.socket(zmq.SUB)
+        self.config = configuration.load()['general']
+        log = logger.create('client')
 
-logger.info("Collecting updates from server...")
-socket.connect("tcp://%s:%s" % (server, port))
+    def connect(self):
 
-# Subscribe to zipcode, default is NYC, 10001
-topicfilter = "26"
-socket.setsockopt(zmq.SUBSCRIBE, topicfilter)
+        server = self.config['server']
+        port = self.config['port']
 
-while 1:
-    logger.info(socket.recv())
-    sleep(5)
+        self.context = zmq.Context()
+        self.socket = self.context.socket(zmq.SUB)
+
+        log.info("Collecting updates from server...")
+        self.socket.connect("tcp://%s:%s" % (server, port))
+
+        topicfilter = "26"
+        self.socket.setsockopt(zmq.SUBSCRIBE, topicfilter)
+
+    def run(self)
+        while 1:
+            log.info(self.socket.recv())
+            sleep(5)
+
+if __name__ == '__main__':
+    sub = subscriber()
+    sub.connect()
+    sub.run()
