@@ -15,13 +15,13 @@ context = zmq.Context()
 socket = context.socket(zmq.SUB)
 
 print "Collecting updates from weather server..."
-socket.connect ("tcp://localhost:%s" % port)
+socket.connect ("tcp://pi:%s" % port)
 
 if len(sys.argv) > 2:
-    socket.connect ("tcp://localhost:%s" % port1)
+    socket.connect ("tcp://pi:%s" % port1)
 
 # Subscribe to zipcode, default is NYC, 10001
-topicfilter = "10001"
+topicfilter = "1000"
 socket.setsockopt(zmq.SUBSCRIBE, topicfilter)
 
 while 1:

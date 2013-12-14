@@ -24,8 +24,9 @@ class polling(object):
         else:
             message = ('%s has been opened.' % channel)
 
+        topic = "1000"
         logger.logger.info(message)
-        self.socket.send("%s" % (message))
+        self.socket.send("%d %d" % (topic, message))
 
     def register_server(self, port = "5556"):
 
