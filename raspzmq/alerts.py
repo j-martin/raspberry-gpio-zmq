@@ -1,4 +1,4 @@
-from raspzmq.vendors.pushbullet.pushbullet import PushBullet
+from vendors.pushbullet.pushbullet import PushBullet
 from twilio.rest import TwilioRestClient
 import smtplib
 
