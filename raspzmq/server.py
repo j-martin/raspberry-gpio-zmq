@@ -1,9 +1,9 @@
 import zmq
 import sys
 import time
-import raspzmq.alerts
-import raspzmq.logger
-import raspzmq.configuration
+import alerts
+import logger
+import configuration
 
 try:
     import RPi.GPIO as GPIO
@@ -32,7 +32,7 @@ class publisher(object):
 
     def register_logger(self):
         log_path = self.config['general']['log_path']
-        self.log = raspzmq.logger.create(name='SERVER', log_path=log_path)
+        self.log = logger.create(name='SERVER', log_path=log_path)
 
     def event_callback(self, channel):
         """Function that runs when an input changes."""
@@ -52,13 +52,13 @@ class publisher(object):
         alerts_list = []
 
         if alerts['sms']['on']:
-            alerts_list.append(raspzmq.alerts.sms(alerts['sms']))
+            alerts_list.append(alerts.sms(alerts['sms']))
 
         if alerts['pushbullet']['on']:
-            alerts_list.append(raspzmq.alerts.pushbullet(alerts['pushbullet']))
+            alerts_list.append(alerts.pushbullet(alerts['pushbullet']))
 
         if alerts['email']['on']:
-            alerts_list.append(raspzmq.alerts.sms(alerts['pushbullet']))
+            alerts_list.append(alerts.sms(alerts['pushbullet']))
 
         self.alerts = alerts_list
 
