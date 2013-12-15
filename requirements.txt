@@ -5,13 +5,18 @@ RPi.GPIO
 # ZMQ
 pyzmq
 
+# Alert APIs
+
+requests>=2.0.0
+twillo
+
 # Flask
-Flask==0.10.1
-MarkupSafe==0.18
-Werkzeug==0.9.4
-itsdangerous==0.23
-Jinja2==2.7.1
+Flask>=0.10.1
+MarkupSafe>=0.18
+Werkzeug>=0.9.4
+itsdangerous>=0.23
+Jinja2>=2.7.1
 
 # Testing
-nose==1.3.0
-Flask-Testing==0.4
+nose>=1.3.0
+Flask-Testing>=0.4

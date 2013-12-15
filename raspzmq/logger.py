@@ -1,7 +1,9 @@
-import logging
+import logging, os
+import logging.handlers
 
+def create(name, log_path="./logs/"):
 
-def create(name, log_path="./"):
+    mkpath(log_path)
 
     log_filename = log_path + name + '.log'
 
@@ -11,7 +13,7 @@ def create(name, log_path="./"):
     console_output = logging.StreamHandler()
     console_output.setLevel(logging.DEBUG)
 
-    file_output = logging.FileHandler(log_filename)
+    file_output = logging.handlers.TimedRotatingFileHandler(log_filename, when="D", interval=1, backupCount=7)
     formatter = logging.Formatter(
         '%(asctime)s - %(name)s - %(levelname)s - %(message)s')
     file_output.setFormatter(formatter)
@@ -21,3 +23,14 @@ def create(name, log_path="./"):
     logger.addHandler(file_output)
 
     return logger
+
+def mkpath(path):
+
+    if not os.path.isdir(path):
+        try:
+            os.mkdir(path)
+        except:
+            print 'Log creation (directory) failed.'
+            return 1
+
+    return 0

@@ -1,7 +1,8 @@
 import zmq
-import raspzmq.logger
 import sys
 import time
+import raspzmq.alerts
+import raspzmq.logger
 import raspzmq.configuration
 
 try:
@@ -10,19 +11,28 @@ except ImportError:
     print('RPi.GPIO module not found. Are you on a RaspberryPi?')
     exit()
 
-log = raspzmq.logger.create('SERVER')
-config = configuration.load()
-
 
 class publisher(object):
 
     """docstring for publisher inputs of the GPIO. The channels should be specified."""
 
-    def __init__(self, channels=[24, 26], port="5556"):
+    def __init__(self, channels=[24, 26]):
         super(publisher, self).__init__()
+
+        self.config = configuration.load()
+
+        self.register_logger()
+
         self.channels = channels
-        self.register_server(port=port)
+        self.register_server()
         self.register_channels()
+        self.register_alerts()
+
+        log.info('The server is ready!')
+
+    def register_logger(self):
+        log_path = self.config['general']['log_path']
+        self.log = raspzmq.logger.create(name='SERVER', log_path=log_path)
 
     def event_callback(self, channel):
         """Function that runs when an input changes."""
@@ -33,10 +43,35 @@ class publisher(object):
         else:
             message = ('%s has been opened.' % channel)
 
-        log.info(message)
+        log.warn(message)
         self.socket.send("%d %s" % (channel, message))
+        self.send_alerts()
 
-    def register_server(self, port="5556"):
+    def register_alerts(self):
+        alerts = self.config['alerts']
+        alerts_list = []
+
+        if alerts['sms']['on']:
+            alerts_list.append(raspzmq.alerts.sms(alerts['sms']))
+
+        if alerts['pushbullet']['on']:
+            alerts_list.append(raspzmq.alerts.pushbullet(alerts['pushbullet']))
+
+        if alerts['email']['on']:
+            alerts_list.append(raspzmq.alerts.sms(alerts['pushbullet']))
+
+        self.alerts = alerts_list
+
+    def send_alerts(self, message):
+
+        for alert in self.alerts:
+            alert.send_notification(message)
+
+        log.info('Notification sent!')
+
+    def register_server(self):
+        server = self.config['server']
+        port = self.config['port']
 
         self.context = zmq.Context()
         self.socket = self.context.socket(zmq.PUB)

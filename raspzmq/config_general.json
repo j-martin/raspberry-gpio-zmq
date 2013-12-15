@@ -1,12 +1,29 @@
 {
   "server": "pi",
-  "port":"5556",
-  "log_path": "./logs",
+  "port": "5556",
+  "log_path": "./logs/",
   "alerts": [
     {
-      "sms": false,
-      "pushbullet": false,
-      "email": false
+      "sms": {
+        "on": false,
+        "twillo_sid": "xxx",
+        "twillo_auth_token": "xxx",
+        "from_number": "123-456-7890",
+        "to_number": "123-456-7890"
+      },
+      "pushbullet": {
+        "on": false,
+        "apikey": "xxx",
+        "device": "id"
+      },
+      "email": {
+        "on": false,
+        "server": "foo@bar.com:25",
+        "email_sender": "me@me.com",
+        "email_receivers": [
+          "me@me.com"
+        ]
+      }
     }
   ]
 }

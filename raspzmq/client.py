@@ -1,10 +1,10 @@
 import sys
 import zmq
 from time import sleep
-import raspzmq.logger
-import raspzmq.configuration
+import logger
+import configuration
 
-log = raspzmq.logger.create('CLIENT')
+log = logger.create('CLIENT')
 
 class subscriber(object):
 
@@ -30,7 +30,7 @@ class subscriber(object):
         topicfilter = "26"
         self.socket.setsockopt(zmq.SUBSCRIBE, topicfilter)
 
-    def run(self)
+    def run(self):
         while 1:
             log.info(self.socket.recv())
             sleep(5)
