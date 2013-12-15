@@ -18,7 +18,7 @@ class mapping(object):
 
     def get_channels(self):
 
-        return self._map.keys()
+        return [int(value) for value in self._map.keys()]
 
     def get_message(self, channel, state):
 

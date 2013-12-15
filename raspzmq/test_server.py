@@ -26,9 +26,3 @@ class fakeGPIO(object):
 def test_starting_the_server():
 	raspzmq.server.GPIO = fakeGPIO()
 	m = raspzmq.server.publisher()
-
-def test_mapping():
-
-	# m = raspzmq.server.publisher()
-	# print m.mapping('26')
-	pass

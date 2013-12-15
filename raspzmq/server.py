@@ -39,9 +39,10 @@ class publisher(object):
     def event_callback(self, channel):
         """Function that runs when an input changes."""
 
-        message = mapping.get_message(channel, GPIO.input(channel))
+        message = self.mapping.get_message(channel, GPIO.input(channel))
         self.log.warn(message)
-        self.zmq_socket.send("%d %s" % (channel, message))
+        
+        self.zmq_socket.send(message.encode())
         self.alerts.send(message)
 
     def register_zmq_server(self):

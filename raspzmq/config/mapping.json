@@ -1,6 +1,6 @@
 [
   {
-    "pin": "3",
+    "pin": 3,
     "sensor": "Door Front",
     "state": [
       "closed",
@@ -8,7 +8,7 @@
     ]
   },
   {
-    "pin": "5",
+    "pin": 5,
     "sensor": "Window Living Room",
     "state": [
       "closed",
@@ -16,7 +16,7 @@
     ]
   },
   {
-    "pin": "7",
+    "pin": 7,
     "sensor": "Window Kitchen",
     "state": [
       "closed",
@@ -24,7 +24,7 @@
     ]
   },
   {
-    "pin": "8",
+    "pin": 8,
     "sensor": "Window Bathroom",
     "state": [
       "closed",
@@ -32,7 +32,7 @@
     ]
   },
   {
-    "pin": "10",
+    "pin": 10,
     "sensor": "Window Bedroom1",
     "state": [
       "closed",
@@ -40,7 +40,7 @@
     ]
   },
   {
-    "pin": "11",
+    "pin": 11,
     "sensor": "Window Bedroom2",
     "state": [
       "closed",
@@ -48,7 +48,7 @@
     ]
   },
   {
-    "pin": "12",
+    "pin": 12,
     "sensor": "Window Bedroom3",
     "state": [
       "closed",
@@ -56,7 +56,7 @@
     ]
   },
   {
-    "pin": "13",
+    "pin": 13,
     "sensor": "Motion Sensor 1",
     "state": [
       "closed",
@@ -64,7 +64,7 @@
     ]
   },
   {
-    "pin": "15",
+    "pin": 15,
     "sensor": "Motion Sensor 1",
     "state": [
       "closed",
@@ -72,7 +72,7 @@
     ]
   },
   {
-    "pin": "16",
+    "pin": 16,
     "sensor": "Door Back",
     "state": [
       "closed",
@@ -80,7 +80,7 @@
     ]
   },
   {
-    "pin": "18",
+    "pin": 18,
     "sensor": "Unused",
     "state": [
       "closed",
@@ -88,7 +88,7 @@
     ]
   },
   {
-    "pin": "19",
+    "pin": 19,
     "sensor": "Unused",
     "state": [
       "closed",
@@ -96,7 +96,7 @@
     ]
   },
   {
-    "pin": "21",
+    "pin": 21,
     "sensor": "Unused",
     "state": [
       "closed",
@@ -104,7 +104,7 @@
     ]
   },
   {
-    "pin": "22",
+    "pin": 22,
     "sensor": "Unused",
     "state": [
       "closed",
@@ -112,7 +112,7 @@
     ]
   },
   {
-    "pin": "23",
+    "pin": 23,
     "sensor": "Unused",
     "state": [
       "closed",
@@ -120,7 +120,7 @@
     ]
   },
   {
-    "pin": "24",
+    "pin": 24,
     "sensor": "Unused",
     "state": [
       "closed",
@@ -128,7 +128,7 @@
     ]
   },
   {
-    "pin": "26",
+    "pin": 26,
     "sensor": "System Alarmed",
     "state": [
       "yes",

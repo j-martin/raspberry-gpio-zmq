@@ -27,13 +27,12 @@ class subscriber(object):
         log.info("Collecting updates from server...")
         self.socket.connect("tcp://%s:%s" % (server, port))
 
-        topicfilter = "26"
-        self.socket.setsockopt(zmq.SUBSCRIBE, topicfilter)
+        self.socket.setsockopt(zmq.SUBSCRIBE, "")
     
     def run(self):
         while 1:
             log.info(self.socket.recv())
-            sleep(5)
+            sleep(1)
 
 if __name__ == '__main__':
     sub = subscriber()
