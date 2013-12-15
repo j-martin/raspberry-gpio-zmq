@@ -1,3 +1,11 @@
+#!/usr/bin/env python
+
+"""server.py, main server file. What brings everything together.
+"""
+
+__author__ = "Jean-Martin Archer"
+__copyright__ = "Copyright 2013, MIT License."
+
 import zmq
 import sys
 import time

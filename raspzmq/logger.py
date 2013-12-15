@@ -1,3 +1,11 @@
+#!/usr/bin/env python
+
+"""logger.py, basic logger configuration.
+"""
+
+__author__ = "Jean-Martin Archer"
+__copyright__ = "Copyright 2013, MIT License."
+
 import logging
 import os
 import logging.handlers

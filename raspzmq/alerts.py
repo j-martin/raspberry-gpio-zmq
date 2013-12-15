@@ -1,3 +1,11 @@
+#!/usr/bin/env python
+
+"""alerts.py Classes for sendings alerts
+"""
+
+__author__ = "Jean-Martin Archer"
+__copyright__ = "Copyright 2013, MIT License."
+
 from vendors.pushbullet.pushbullet import PushBullet
 from twilio.rest import TwilioRestClient
 import smtplib

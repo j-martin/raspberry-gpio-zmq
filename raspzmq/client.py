@@ -1,10 +1,16 @@
+#!/usr/bin/env python
+
+"""client.py basic ZMQ client that connects to the server.
+"""
+
+__author__ = "Jean-Martin Archer"
+__copyright__ = "Copyright 2013, MIT License."
+
 import sys
 import zmq
 from time import sleep
 import logger
 import configuration
-
-log = logger.create('CLIENT')
 
 
 class subscriber(object):

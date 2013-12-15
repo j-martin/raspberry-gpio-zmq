@@ -1,3 +1,11 @@
+#!/usr/bin/env python
+
+"""raspberry-gpio-zmq
+"""
+
+__author__ = "Jean-Martin Archer"
+__copyright__ = "Copyright 2013, MIT License."
+
 from raspzmq.mapping import mapping
 
 m = mapping()

@@ -1,3 +1,11 @@
+#!/usr/bin/env python
+
+"""mapping.py, maps IO event to the mapping.json file and format messages.
+"""
+
+__author__ = "Jean-Martin Archer"
+__copyright__ = "Copyright 2013, MIT License."
+
 from json import loads
 from os import path
 

@@ -1,3 +1,12 @@
+#!/usr/bin/env python
+
+"""_test_alerts.py, tests the alerts. The underscore for the
+nosetest default scanner to ignore it
+"""
+
+__author__ = "Jean-Martin Archer"
+__copyright__ = "Copyright 2013, MIT License."
+
 import raspzmq.alerts as alerts
 import configuration
 

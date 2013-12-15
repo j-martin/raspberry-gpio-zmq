@@ -1,3 +1,12 @@
+#!/usr/bin/env python
+
+"""configuration.py, loads the general configuration
+for both the server and the client.
+"""
+
+__author__ = "Jean-Martin Archer"
+__copyright__ = "Copyright 2013, MIT License."
+
 from os import path
 from json import loads
 
