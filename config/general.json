@@ -1,5 +1,5 @@
 {
-  "server": "pi",
+  "server": "raspberrypi",
   "port": "45678",
   "log_path": "./logs/",
   "alerts": {
