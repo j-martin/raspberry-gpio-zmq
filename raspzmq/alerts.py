@@ -109,5 +109,5 @@ class sms(basic_alert):
 
     def send_notification(self, message):
         message = self.client.sms.messages.create(body=message,
-                                             to=self.config['to_number'],
-                                             from_=self.config["from_number"])
+                                                  to=self.config['to_number'],
+                                                  from_=self.config["from_number"])
