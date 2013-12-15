@@ -1,9 +1,10 @@
 import sys
 import zmq
-from logger import logger
 from time import sleep
-import configuration
+import raspzmq.logger
+import raspzmq.configuration
 
+log = raspzmq.logger.create('CLIENT')
 
 class subscriber(object):
 
