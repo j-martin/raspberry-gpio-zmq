@@ -1,6 +1,6 @@
 {
   "server": "pi",
-  "port": "5556",
+  "port": "45678",
   "log_path": "./logs/",
   "alerts": {
     "sms": {

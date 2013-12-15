@@ -17,18 +17,18 @@ class publisher(object):
 
     """docstring for publisher inputs of the GPIO. The channels should be specified."""
 
-    def __init__(self):
+    def __init__(self, config_path = "./config/"):
         super(publisher, self).__init__()
 
-        self.config = configuration.load()
-        self.mapping = mapping.mapping()
+        self.config = configuration.load(config_path)
+        self.mapping = mapping.mapping(config_path)
 
         self.register_logger()
 
         self.channels = self.mapping.get_channels()
         self.register_zmq_server()
         self.register_channels()
-        self.alerts = alerts.alerts()
+        self.alerts = alerts.alerts(config_path)
 
         self.log.info('The server is ready!')
 

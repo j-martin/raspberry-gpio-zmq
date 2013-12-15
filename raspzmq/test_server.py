@@ -1,7 +1,8 @@
 import raspzmq.server
 
 class fakeGPIO(object):
-	"""docstring for GPIO"""
+	"""docstring for fakeGPIO so tests can be run on somehting
+	else than a RaspberryPi"""
 	def __init__(self):
 		
 		self.BOARD = 1

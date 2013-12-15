@@ -1,20 +1,25 @@
 from json import loads
-import time
-
+from os import path
 
 class mapping(object):
 
     """docstring for mapping"""
 
-    def __init__(self):
-        self.load()
+    def __init__(self, config_path = "./config/"):
+        self.load(config_path)
 
-    def load(self):
+    def load(self, config_path):
 
-        data = open("config/mapping.json").read()
-        self._map = self.reformat_mapping(loads(data))
+        config_path += 'mapping.json'
 
-        return 0
+        if path.isfile(config_path):
+            data = open(config_path).read()
+            self._map = self.reformat_mapping(loads(data))
+            return 0
+        else:
+            print 'Config file not found: %r' % config_path
+            exit
+            
 
     def get_channels(self):
 

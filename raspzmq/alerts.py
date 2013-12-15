@@ -8,8 +8,8 @@ class alerts(object):
 
     """docstring for alerts"""
 
-    def __init__(self):
-        self.config = configuration.load()
+    def __init__(self, config_path = './config/'):
+        self.config = configuration.load(config_path)
         self.register()
 
     def register(self):
