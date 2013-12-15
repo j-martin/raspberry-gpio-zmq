@@ -70,8 +70,8 @@ class publisher(object):
         log.info('Notification sent!')
 
     def register_server(self):
-        server = self.config['server']
-        port = self.config['port']
+        server = self.config['general']['server']
+        port = self.config['general']['port']
 
         self.context = zmq.Context()
         self.socket = self.context.socket(zmq.PUB)
