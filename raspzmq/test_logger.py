@@ -12,4 +12,3 @@ def test_the_logger():
     log.error('error message')
     log.critical('critical message')
 
-    os.unlink('test.log')

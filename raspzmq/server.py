@@ -4,6 +4,7 @@ import time
 import alerts
 import logger
 import configuration
+import mapping
 
 try:
     import RPi.GPIO as GPIO
@@ -16,67 +17,45 @@ class publisher(object):
 
     """docstring for publisher inputs of the GPIO. The channels should be specified."""
 
-    def __init__(self, channels=[24, 26]):
+    def __init__(self):
         super(publisher, self).__init__()
 
         self.config = configuration.load()
+        self.mapping = mapping.mapping()
 
         self.register_logger()
 
-        self.channels = channels
-        self.register_server()
+        self.channels = self.mapping.get_channels()
+        self.register_zmq_server()
         self.register_channels()
-        self.register_alerts()
+        self.alerts = alerts.alerts()
 
-        log.info('The server is ready!')
+        self.log.info('The server is ready!')
 
     def register_logger(self):
-        log_path = self.config['general']['log_path']
+        log_path = self.config['log_path']
         self.log = logger.create(name='SERVER', log_path=log_path)
 
     def event_callback(self, channel):
         """Function that runs when an input changes."""
 
-        if GPIO.input(channel) == 1:
-            message = ('%s has been closed.' % channel)
+        message = mapping.get_message(channel, GPIO.input(channel))
+        self.log.warn(message)
+        self.zmq_socket.send("%d %s" % (channel, message))
+        self.alerts.send(message)
 
-        else:
-            message = ('%s has been opened.' % channel)
-
-        log.warn(message)
-        self.socket.send("%d %s" % (channel, message))
-        self.send_alerts()
-
-    def register_alerts(self):
-        alerts = self.config['alerts']
-        alerts_list = []
-
-        if alerts['sms']['on']:
-            alerts_list.append(alerts.sms(alerts['sms']))
-
-        if alerts['pushbullet']['on']:
-            alerts_list.append(alerts.pushbullet(alerts['pushbullet']))
-
-        if alerts['email']['on']:
-            alerts_list.append(alerts.sms(alerts['pushbullet']))
-
-        self.alerts = alerts_list
-
-    def send_alerts(self, message):
-
-        for alert in self.alerts:
-            alert.send_notification(message)
-
-        log.info('Notification sent!')
-
-    def register_server(self):
-        server = self.config['general']['server']
-        port = self.config['general']['port']
+    def register_zmq_server(self):
+        port = self.config['port']
 
         self.context = zmq.Context()
-        self.socket = self.context.socket(zmq.PUB)
-        self.socket.bind("tcp://*:%s" % port)
-        log.info('Server on port %s ready!' % port)
+        self.zmq_socket = self.context.socket(zmq.PUB)
+        self.zmq_socket.bind("tcp://*:%s" % port)
+        self.log.info('Server on port %s ready!' % port)
+
+    def close_zmq_server(self):
+        port = self.config['port']
+        self.zmq_socket.unbind("tcp://*:%s" % port)
+        self.log.info('Server on port %s has been closed!' % port)
 
     def register_channels(self):
 
@@ -85,7 +64,7 @@ class publisher(object):
             GPIO.setup(channel, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
             GPIO.add_event_detect(
                 channel, GPIO.BOTH, callback=self.event_callback)
-        log.info('GPIO Channels ready!')
+        self.log.info('GPIO Channels ready!')
         return 0
 
     def run(self):

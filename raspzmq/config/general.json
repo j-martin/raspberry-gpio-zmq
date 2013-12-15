@@ -1,0 +1,27 @@
+{
+  "server": "pi",
+  "port": "5556",
+  "log_path": "./logs/",
+  "alerts": {
+    "sms": {
+      "on": false,
+      "twilio_sid": "enter_your_sid",
+      "twilio_auth_token": "enter_your_authtoken",
+      "from_number": "the-num-ber",
+      "to_number": "the-num-ber"
+    },
+    "pushbullet": {
+      "on": false,
+      "apikey": "enter_your_apikey",
+      "device": ["enteryour device id, six number"]
+    },
+    "email": {
+      "on": false,
+      "server": "foo@bar.com:25",
+      "email_sender": "me@me.com",
+      "email_receivers": [
+        "you@you.com"
+      ]
+    }
+  }
+}

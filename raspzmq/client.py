@@ -13,7 +13,7 @@ class subscriber(object):
     def __init__(self):
         super(subscriber, self).__init__()
 
-        self.config = configuration.load()['general']
+        self.config = configuration.load()
         log = logger.create('client')
 
     def connect(self):
@@ -29,7 +29,7 @@ class subscriber(object):
 
         topicfilter = "26"
         self.socket.setsockopt(zmq.SUBSCRIBE, topicfilter)
-
+    
     def run(self):
         while 1:
             log.info(self.socket.recv())
