@@ -22,12 +22,11 @@ def test_reformat_mapping():
     assert(result == expected)
 
     data = [{'pin': '2', 'value1': 'ok', 'value2': 'nay', 'sensor': 'Unused'}]
-    expected = {} # Nothing because the sensor is unused
+    expected = {}  # Nothing because the sensor is unused
 
     result = m.reformat_mapping(data)
 
     assert(result == expected)
-
 
     data = [{'pin': '10', 'value1': 'ok', 'value10': 'nay', 'sensor': 'used'}]
     expected = {'10': {'value1': 'ok', 'value10': 'nay', 'sensor': 'used'}}

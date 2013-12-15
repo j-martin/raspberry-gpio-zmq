@@ -15,9 +15,10 @@ except ImportError:
 
 class publisher(object):
 
-    """docstring for publisher inputs of the GPIO. The channels should be specified."""
+    """docstring for publisher inputs of the GPIO. The channels should
+    be specified."""
 
-    def __init__(self, config_path = "./config/"):
+    def __init__(self, config_path="./config/"):
         super(publisher, self).__init__()
 
         self.config = configuration.load(config_path)
@@ -41,7 +42,7 @@ class publisher(object):
 
         message = self.mapping.get_message(channel, GPIO.input(channel))
         self.log.warn(message)
-        
+
         self.zmq_socket.send(message.encode())
         self.alerts.send(message)
 

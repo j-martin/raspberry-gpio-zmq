@@ -1,11 +1,12 @@
 from json import loads
 from os import path
 
+
 class mapping(object):
 
     """docstring for mapping"""
 
-    def __init__(self, config_path = "./config/"):
+    def __init__(self, config_path="./config/"):
         self.load(config_path)
 
     def load(self, config_path):
@@ -19,7 +20,6 @@ class mapping(object):
         else:
             print 'Config file not found: %r' % config_path
             exit
-            
 
     def get_channels(self):
 

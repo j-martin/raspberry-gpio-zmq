@@ -11,4 +11,3 @@ def test_the_logger():
     log.warn('warn message')
     log.error('error message')
     log.critical('critical message')
-

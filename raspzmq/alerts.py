@@ -8,7 +8,7 @@ class alerts(object):
 
     """docstring for alerts"""
 
-    def __init__(self, config_path = './config/'):
+    def __init__(self, config_path='./config/'):
         self.config = configuration.load(config_path)
         self.register()
 
@@ -106,8 +106,9 @@ class sms(basic_alert):
         account_sid = self.config['twilio_sid']
         auth_token = self.config['twilio_auth_token']
         self.client = TwilioRestClient(account_sid, auth_token)
+        self.create = client.sms.messages.create
 
     def send_notification(self, message):
-        message = self.client.sms.messages.create(body=message,
-                                                  to=self.config['to_number'],
-                                                  from_=self.config["from_number"])
+        message = self.create(body=message,
+                              to=self.config['to_number'],
+                              from_=self.config["from_number"])

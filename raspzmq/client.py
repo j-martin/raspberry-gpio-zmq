@@ -11,7 +11,7 @@ class subscriber(object):
 
     """docstring for subscriber"""
 
-    def __init__(self, config_path = "./config/"):
+    def __init__(self, config_path="./config/"):
         super(subscriber, self).__init__()
 
         self.config = configuration.load(config_path)
