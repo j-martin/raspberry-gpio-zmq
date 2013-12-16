@@ -33,8 +33,11 @@ class subscriber(object):
         self.socket = self.context.socket(zmq.SUB)
 
         self.log.info("Client Started - Waiting for server...")
-        self.socket.connect("tcp://%s:%s" % (server, port))
-
+        try:
+            self.socket.connect("tcp://%s:%s" % (server, port))
+        except zmq.error.ZMQError:
+            # Hack for Travis-CI
+            self.socket.connect("tcp://localhost:%s" % ( port))
         self.socket.setsockopt(zmq.SUBSCRIBE, "")
 
     def run(self):
