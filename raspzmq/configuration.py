@@ -1,25 +1,24 @@
+#!/usr/bin/env python
+
+"""configuration.py, loads the general configuration
+for both the server and the client.
+"""
+
+__author__ = "Jean-Martin Archer"
+__copyright__ = "Copyright 2013, MIT License."
+
+from os import path
 from json import loads
 
 
-def load():
-    config = {}
-    data = open("config_general.json").read()
-    config['general'] = loads(data)
-    data = open("config_mapping.json").read()
-    config['mapping'] = reformat_mapping(loads(data))
+def load(config_path):
 
-    return config
+    config_path += 'general.json'
 
+    if path.isfile(config_path):
+        data = open(config_path).read()
+        return loads(data)
 
-def reformat_mapping(data):
-
-    processed_data = {}
-
-    for item in data:
-
-        pin = item['pin']
-        item.pop('pin')
-
-        processed_data.update({pin: item})
-
-    return processed_data
+    else:
+        print 'Config file not found: %r' % config_path
+        exit

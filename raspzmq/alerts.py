@@ -1,11 +1,50 @@
+#!/usr/bin/env python
+
+"""alerts.py Classes for sendings alerts
+"""
+
+__author__ = "Jean-Martin Archer"
+__copyright__ = "Copyright 2013, MIT License."
+
 from vendors.pushbullet.pushbullet import PushBullet
 from twilio.rest import TwilioRestClient
 import smtplib
+import configuration
+
+
+class alerts(object):
+
+    """docstring for alerts"""
+
+    def __init__(self, config_path='./config/'):
+        self.config = configuration.load(config_path)
+        self.register()
+
+    def register(self):
+        alerts = self.config['alerts']
+        alerts_list = []
+
+        if alerts['sms']['on']:
+            alerts_list.append(alerts.sms(alerts['sms']))
+
+        if alerts['pushbullet']['on']:
+            alerts_list.append(alerts.pushbullet(alerts['pushbullet']))
+
+        if alerts['email']['on']:
+            alerts_list.append(alerts.sms(alerts['pushbullet']))
+
+        self.alerts = alerts_list
+
+    def send(self, message):
+
+        for alert in self.alerts:
+            alert.send_notification(message)
 
 
 class basic_alert(object):
 
-    """docstring for basic_alert"""
+    """docstring for basic_alert class. This is more an interface/contract
+     than anything else"""
 
     def __init__(self, config):
         self.config = config
@@ -55,11 +94,15 @@ class pushbullet(basic_alert):
 
     def setup(self):
 
-        push = PushBullet(self.config['apikey'])
+        self.push = PushBullet(self.config['apikey'])
 
     def send_notification(self, message):
-        push.pushNote(
-            self.config['device'], message, 'You may want to check home')
+
+        for device in self.config['device']:
+            self.push.pushNote(device, message, message)
+
+    def get_device_id(self):
+        print self.push.getDevices()
 
 
 class sms(basic_alert):
@@ -70,9 +113,10 @@ class sms(basic_alert):
         # Your Account Sid and Auth Token from twilio.com/user/account
         account_sid = self.config['twilio_sid']
         auth_token = self.config['twilio_auth_token']
-        client = TwilioRestClient(account_sid, auth_token)
+        self.client = TwilioRestClient(account_sid, auth_token)
+        self.create = client.sms.messages.create
 
     def send_notification(self, message):
-        message = client.sms.messages.create(body=message,
-                                             to=self.config['to_number'],
-                                             from_=self.config["from_number"])
+        message = self.create(body=message,
+                              to=self.config['to_number'],
+                              from_=self.config["from_number"])

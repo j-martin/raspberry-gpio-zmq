@@ -1,5 +1,15 @@
-import logging, os
+#!/usr/bin/env python
+
+"""logger.py, basic logger configuration.
+"""
+
+__author__ = "Jean-Martin Archer"
+__copyright__ = "Copyright 2013, MIT License."
+
+import logging
+import os
 import logging.handlers
+
 
 def create(name, log_path="./logs/"):
 
@@ -13,7 +23,8 @@ def create(name, log_path="./logs/"):
     console_output = logging.StreamHandler()
     console_output.setLevel(logging.DEBUG)
 
-    file_output = logging.handlers.TimedRotatingFileHandler(log_filename, when="D", interval=1, backupCount=7)
+    file_output = logging.handlers.TimedRotatingFileHandler(
+        log_filename, when="D", interval=1, backupCount=7)
     formatter = logging.Formatter(
         '%(asctime)s - %(name)s - %(levelname)s - %(message)s')
     file_output.setFormatter(formatter)
@@ -23,6 +34,7 @@ def create(name, log_path="./logs/"):
     logger.addHandler(file_output)
 
     return logger
+
 
 def mkpath(path):
 

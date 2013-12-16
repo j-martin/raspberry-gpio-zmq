@@ -1,6 +1,15 @@
+#!/usr/bin/env python
+
+"""test_client.py, testing client.py
+"""
+
+__author__ = "Jean-Martin Archer"
+__copyright__ = "Copyright 2013, MIT License."
+
 import raspzmq.client
 
-def test_starting_the_client():
-	m = raspzmq.client.subscriber()
 
-	assert(m == 2)
+def test_starting_the_client():
+    m = raspzmq.client.subscriber('./config/')
+
+    print(dir(m))

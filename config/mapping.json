@@ -1,135 +1,135 @@
 [
   {
-    "pin": "3",
-    "sensor": "door_front",
+    "pin": 3,
+    "sensor": "Door Front",
     "state": [
       "closed",
       "open"
     ]
   },
   {
-    "pin": "5",
-    "sensor": "window_living_room",
+    "pin": 5,
+    "sensor": "Window Living Room",
     "state": [
       "closed",
       "open"
     ]
   },
   {
-    "pin": "7",
-    "sensor": "window_kitchen",
+    "pin": 7,
+    "sensor": "Window Kitchen",
     "state": [
       "closed",
       "open"
     ]
   },
   {
-    "pin": "8",
-    "sensor": "window_bathroom",
+    "pin": 8,
+    "sensor": "Window Bathroom",
     "state": [
       "closed",
       "open"
     ]
   },
   {
-    "pin": "10",
-    "sensor": "window_bedroom1",
+    "pin": 10,
+    "sensor": "Window Bedroom1",
     "state": [
       "closed",
       "open"
     ]
   },
   {
-    "pin": "11",
-    "sensor": "window_bedroom2",
+    "pin": 11,
+    "sensor": "Window Bedroom2",
     "state": [
       "closed",
       "open"
     ]
   },
   {
-    "pin": "12",
-    "sensor": "window_bedroom3",
+    "pin": 12,
+    "sensor": "Window Bedroom3",
     "state": [
       "closed",
       "open"
     ]
   },
   {
-    "pin": "13",
-    "sensor": "motion_sensor_1",
+    "pin": 13,
+    "sensor": "Motion Sensor 1",
     "state": [
       "closed",
       "open"
     ]
   },
   {
-    "pin": "15",
-    "sensor": "motion_sensor_1",
+    "pin": 15,
+    "sensor": "Motion Sensor 1",
     "state": [
       "closed",
       "open"
     ]
   },
   {
-    "pin": "16",
-    "sensor": "door_back",
+    "pin": 16,
+    "sensor": "Door Back",
     "state": [
       "closed",
       "open"
     ]
   },
   {
-    "pin": "18",
-    "sensor": "unused",
+    "pin": 18,
+    "sensor": "Unused",
     "state": [
       "closed",
       "open"
     ]
   },
   {
-    "pin": "19",
-    "sensor": "unused",
+    "pin": 19,
+    "sensor": "Unused",
     "state": [
       "closed",
       "open"
     ]
   },
   {
-    "pin": "21",
-    "sensor": "unused",
+    "pin": 21,
+    "sensor": "Unused",
     "state": [
       "closed",
       "open"
     ]
   },
   {
-    "pin": "22",
-    "sensor": "unused",
+    "pin": 22,
+    "sensor": "Unused",
     "state": [
       "closed",
       "open"
     ]
   },
   {
-    "pin": "23",
-    "sensor": "unused",
+    "pin": 23,
+    "sensor": "Unused",
     "state": [
       "closed",
       "open"
     ]
   },
   {
-    "pin": "24",
-    "sensor": "unused",
+    "pin": 24,
+    "sensor": "Unused",
     "state": [
       "closed",
       "open"
     ]
   },
   {
-    "pin": "26",
-    "sensor": "system_alarmed",
+    "pin": 26,
+    "sensor": "System Alarmed",
     "state": [
       "yes",
       "no"

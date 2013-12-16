@@ -1,6 +1,7 @@
 #Custom
 *.sublime-workspace
 *.log
+.idea
 
 *.py[cod]
 
