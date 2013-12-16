@@ -8,8 +8,11 @@ Monitors the GPIO events (on/off) of the RaspberryPi (may work on other device w
 
 It can be used for example as an ad-hoc security system or anything really.
 
+This project has been tested against Python 2.6 and 2.7 only.
+
 ## Setup
 
+- Clone the repo: "git clone git@github.com:j-martin/raspberry-gpio-zmq.git"
 - Configure the config/general.json file to match your setup.
 - Configure the config/mapping.json file to match how how your GPIO is connected to your device(s). The default file is configured as if it was connected to the sensor of an alarm system.
 
