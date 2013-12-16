@@ -1,4 +1,7 @@
 # Raspberry-GPIO-ZMQ
+
+[![Build Status](https://travis-ci.org/j-martin/raspberry-gpio-zmq.png?branch=master)](https://travis-ci.org/j-martin/raspberry-gpio-zmq)
+
 Linking realworld input from a RaspberryPi to the interwebs!
 
 Monitors the GPIO events (on/off) of the RaspberryPi (may work on other device with some work) and notifies clients via ZMQ (client.py), email, sms (text) or pushbullet (push to Android, Chrome and iOS (planned)).
