@@ -9,7 +9,7 @@
     ],
     "dependencies": {
         "jquery": ">= 2.x.x",
-        "modernizer": ">= 2.x.x",
+        "modernizr": ">= 2.x.x",
         "foundation": "5.x.x"
     }
 }

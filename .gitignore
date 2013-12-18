@@ -2,7 +2,7 @@
 *.sublime-workspace
 *.log
 .idea
-
+bower_components/
 *.py[cod]
 
 # C extensions
