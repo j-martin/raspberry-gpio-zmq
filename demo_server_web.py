@@ -8,4 +8,4 @@ __copyright__ = "Copyright 2013, MIT License."
 
 import raspzmq.server_web as server_web
 
-w = server_web.run(config_path="./config/")
+w = server_web.run(config_path="./config/", debug=True)

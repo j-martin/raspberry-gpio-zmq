@@ -12,12 +12,14 @@ import configuration
 
 app = Flask(__name__)
 
-
 def check_auth(username, password):
     """This function is called to check if a username /
     password combination is valid.
     """
-    return username == config['credentials']['username'] and password == config['credentials']['password']
+
+    credentials = app.extraconfig['credentials']
+
+    return username == credentials['username'] and password == credentials['password']
 
 
 def authenticate():
@@ -39,7 +41,7 @@ def requires_auth(f):
 
 
 def get_logs_list():
-    return [i.replace('.log', '') for i in listdir(config['log_path']) if i.endswith('.log')]
+    return [i.replace('.log', '') for i in listdir(app.extraconfig['log_path']) if i.endswith('.log')]
 
 
 def get_logfile(logfile, lastline=0):
@@ -47,7 +49,7 @@ def get_logfile(logfile, lastline=0):
     _split = re.compile(r'[\0%s]' % re.escape(''.join(
                                               [path.sep, path.altsep or ''])))
 
-    fname = path.join(config['log_path'], _split.sub('', logfile) + '.log')
+    fname = path.join(app.extraconfig['log_path'], _split.sub('', logfile) + '.log')
 
     with open(fname, "r") as f:
         f.seek(0, 2)           # Seek @ EOF
@@ -76,9 +78,11 @@ def log(logfile, lastline=0):
                                                lastline))
 
 
-def run(config_path='./config/'):
-    config = configuration.load(config_path)
-    app.run(host=config['host_http'], port=int(config['port_http']))
-    app.run()
+def run(config_path='./config/', debug=False):
+    app.extraconfig = configuration.load(config_path)
+    host=app.extraconfig['host_http']
+    port=int(app.extraconfig['port_http'])
+    app.run(host=host, port=port, debug=debug)
+
 if __name__ == "__main__":
     run()
