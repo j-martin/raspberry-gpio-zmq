@@ -20,7 +20,7 @@ This project has been tested against Python 2.6 and 2.7 only.
 - Run "pip install -r requirements.txt" on both. On some systems you may have to install PyZMQ manually or with another package manager.
 - Run "sudo python demo_server.py & python demo_server_web.py". The server needs to run as ROOT to access the GPIO interface, unless you configure your server differently.
 - Run "python demo_client.py" on the client(s).
-- Once launched, the server's web interface can be access at <serverip>:5001.
+- Once launched, the server's web interface can be access at serverip:5001.
 
 ## Dependencies
 See requirements.txt
