@@ -10,7 +10,7 @@ import re
 from flask import Flask, request, Response, render_template, Markup, url_for
 import configuration
 
-app = Flask(__name__)
+app = Flask('HTTP')
 
 def check_auth(username, password):
     """This function is called to check if a username /
