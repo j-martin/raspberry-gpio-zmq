@@ -9,6 +9,7 @@
     ],
     "dependencies": {
         "jquery": ">= 2.x.x",
+        "list.js" "1.x.x"
         "modernizr": ">= 2.x.x",
         "foundation": "5.x.x"
     }

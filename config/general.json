@@ -2,6 +2,10 @@
   "server": "raspberrypi",
   "port": "45678",
   "log_path": "./logs/",
+  "credentials": {
+    "username": "admin",
+    "password": "secrets"
+  },
   "alerts": {
     "sms": {
       "on": false,
@@ -13,7 +17,9 @@
     "pushbullet": {
       "on": false,
       "apikey": "enter_your_apikey",
-      "device": ["enteryour device id, six number"]
+      "device": [
+        "enteryour device id, six number"
+      ]
     },
     "email": {
       "on": false,

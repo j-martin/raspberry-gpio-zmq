@@ -15,7 +15,7 @@ def create(name, log_path="./logs/"):
 
     mkpath(log_path)
 
-    log_filename = log_path + name + '.log'
+    log_filename = log_path + name.lower() + '.log'
 
     logger = logging.getLogger(name)
     logger.setLevel(logging.DEBUG)
