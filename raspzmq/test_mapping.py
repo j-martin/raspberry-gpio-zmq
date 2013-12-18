@@ -6,9 +6,9 @@
 __author__ = "Jean-Martin Archer"
 __copyright__ = "Copyright 2013, MIT License."
 
-from raspzmq.mapping import mapping
+from raspzmq.mapper import Mapper
 
-m = mapping()
+m = Mapper()
 
 
 def test_get_channels():
@@ -21,24 +21,23 @@ def test_get_message():
 
 
 def test_reformat_mapping():
-
     data = [{'pin': '2', 'value1': 'ok', 'value2': 'nay', 'sensor': 'Door'}]
     expected = {'2': {'value1': 'ok', 'value2': 'nay', 'sensor': 'Door'}}
 
     result = m.reformat_mapping(data)
 
-    assert(result == expected)
+    assert (result == expected)
 
     data = [{'pin': '2', 'value1': 'ok', 'value2': 'nay', 'sensor': 'Unused'}]
     expected = {}  # Nothing because the sensor is unused
 
     result = m.reformat_mapping(data)
 
-    assert(result == expected)
+    assert (result == expected)
 
     data = [{'pin': '10', 'value1': 'ok', 'value10': 'nay', 'sensor': 'used'}]
     expected = {'10': {'value1': 'ok', 'value10': 'nay', 'sensor': 'used'}}
 
     result = m.reformat_mapping(data)
 
-    assert(result == expected)
+    assert (result == expected)

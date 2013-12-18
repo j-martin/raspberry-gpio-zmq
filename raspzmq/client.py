@@ -6,19 +6,19 @@
 __author__ = "Jean-Martin Archer"
 __copyright__ = "Copyright 2013, MIT License."
 
-import sys
-import zmq
 from time import sleep
+
+import zmq
+
 import logger
 import configuration
 
 
-class subscriber(object):
-
+class Subscriber(object):
     """docstring for subscriber"""
 
     def __init__(self, config_path="./config/"):
-        super(subscriber, self).__init__()
+        super(Subscriber, self).__init__()
 
         self.config = configuration.load(config_path)
         self.log = logger.create('CLIENT')
@@ -45,6 +45,7 @@ class subscriber(object):
             self.log.info(self.socket.recv())
             sleep(1)
 
+
 if __name__ == '__main__':
-    sub = subscriber()
+    sub = Subscriber()
     sub.run()

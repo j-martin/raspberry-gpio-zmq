@@ -8,5 +8,5 @@ __copyright__ = "Copyright 2013, MIT License."
 
 import raspzmq.client as client
 
-s = client.subscriber(config_path="./config/")
+s = client.Subscriber(config_path="./config/")
 s.run()  # Simple infinite look so the client keep running

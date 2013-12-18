@@ -10,6 +10,6 @@ import raspzmq.client
 
 
 def test_starting_the_client():
-    m = raspzmq.client.subscriber('./config/')
+    m = raspzmq.client.Subscriber('./config/')
 
     print(dir(m))

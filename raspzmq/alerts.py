@@ -6,14 +6,15 @@
 __author__ = "Jean-Martin Archer"
 __copyright__ = "Copyright 2013, MIT License."
 
-from vendors.pushbullet.pushbullet import PushBullet
-from twilio.rest import TwilioRestClient
 import smtplib
+
+from twilio.rest import TwilioRestClient
+
+from vendors.pushbullet.pushbullet import PushBullet
 import configuration
 
 
-class alerts(object):
-
+class Alerts(object):
     """docstring for alerts"""
 
     def __init__(self, config_path='./config/'):
@@ -24,14 +25,14 @@ class alerts(object):
         alerts = self.config['alerts']
         alerts_list = []
 
-        if alerts['sms']['on']:
-            alerts_list.append(alerts.sms(alerts['sms']))
+        if alerts['AlertSMS']['on']:
+            alerts_list.append(alerts.sms(alerts['AlertSMS']))
 
-        if alerts['pushbullet']['on']:
-            alerts_list.append(alerts.pushbullet(alerts['pushbullet']))
+        if alerts['AlertPushBullet']['on']:
+            alerts_list.append(alerts.pushbullet(alerts['AlertPushBullet']))
 
-        if alerts['email']['on']:
-            alerts_list.append(alerts.sms(alerts['pushbullet']))
+        if alerts['AlertEmail']['on']:
+            alerts_list.append(alerts.sms(alerts['AlertPushBullet']))
 
         self.alerts = alerts_list
 
@@ -41,9 +42,8 @@ class alerts(object):
             alert.send_notification(message)
 
 
-class basic_alert(object):
-
-    """docstring for basic_alert class. This is more an interface/contract
+class BasicAlert(object):
+    """docstring for BasicAlert class. This is more an interface/contract
      than anything else"""
 
     def __init__(self, config):
@@ -57,9 +57,8 @@ class basic_alert(object):
         pass
 
 
-class email(basic_alert):
-
-    """docstring for email"""
+class AlertEmail(BasicAlert):
+    """docstring for AlertEmail"""
 
     def setup(self):
 
@@ -79,25 +78,22 @@ class email(basic_alert):
         try:
             smtpObj = smtplib.SMTP(self.server)
             smtpObj.sendmail(self.sender, self.receivers, email_body)
-            print "Successfully sent email"
+            print "Successfully sent AlertEmail"
         except SMTPException:
-            print "Error: unable to send email"
+            print "Error: unable to send AlertEmail"
 
 
-class pushbullet(basic_alert):
-
-    """docstring for pushbullet. Get you api key from
-    https://www.pushbullet.com/account
+class AlertPushBullet(BasicAlert):
+    """docstring for AlertPushBullet. Get you api key from
+    https://www.PushBullet.com/account
 
         Use the pyPushBullet API to know which deviceID to use.
     """
 
     def setup(self):
-
         self.push = PushBullet(self.config['apikey'])
 
     def send_notification(self, message):
-
         for device in self.config['device']:
             self.push.pushNote(device, message, message)
 
@@ -105,9 +101,8 @@ class pushbullet(basic_alert):
         print self.push.getDevices()
 
 
-class sms(basic_alert):
-
-    """docstring for sms, uses your twilio.com account."""
+class AlertSMS(BasicAlert):
+    """docstring for AlertSMS, uses your twilio.com account."""
 
     def setup(self):
         # Your Account Sid and Auth Token from twilio.com/user/account

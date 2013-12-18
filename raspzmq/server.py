@@ -6,13 +6,15 @@
 __author__ = "Jean-Martin Archer"
 __copyright__ = "Copyright 2013, MIT License."
 
-import zmq
-import sys
 import time
+
+import zmq
+
 import alerts
 import logger
 import configuration
-import mapping
+import mapper
+
 
 try:
     import RPi.GPIO as GPIO
@@ -21,23 +23,22 @@ except ImportError:
     exit()
 
 
-class publisher(object):
-
+class Publisher(object):
     """docstring for publisher inputs of the GPIO. The channels should
     be specified."""
 
     def __init__(self, config_path="./config/"):
-        super(publisher, self).__init__()
+        super(Publisher, self).__init__()
 
         self.config = configuration.load(config_path)
-        self.mapping = mapping.mapping(config_path)
+        self.mapping = mapper.Mapper(config_path)
 
         self.register_logger()
 
         self.channels = self.mapping.get_channels()
         self.register_zmq_server()
         self.register_channels()
-        self.alerts = alerts.alerts(config_path)
+        self.alerts = alerts.Alerts(config_path)
 
         self.log.info('The server is ready!')
 
@@ -82,6 +83,7 @@ class publisher(object):
         while True:
             time.sleep(60)
 
+
 if __name__ == '__main__':
-    m = publisher()
+    m = Publisher()
     m.run()
