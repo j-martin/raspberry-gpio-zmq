@@ -78,6 +78,7 @@ def log(logfile, lastline=0):
 
 def run(config_path='./config/'):
     config = configuration.load(config_path)
-    app.run(host=config['host_http'], port=config['port_http'])
+    app.run(host=config['host_http'], port=int(config['port_http']))
+    app.run()
 if __name__ == "__main__":
     run()
