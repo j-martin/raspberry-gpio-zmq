@@ -1,4 +1,4 @@
-"""server.py, main server file. What brings everything together.
+"""server_web.py, web interface for the logs.
 """
 
 __author__ = "Jean-Martin Archer"
@@ -75,7 +75,8 @@ def log(logfile, lastline=0):
                            logdata=get_logfile(logfile,
                                                lastline))
 
-def run(config_path = './config/'):
+
+def run(config_path='./config/'):
     config = configuration.load(config_path)
     app.run(host=config['host_http'], port=config['port_http'])
 if __name__ == "__main__":
