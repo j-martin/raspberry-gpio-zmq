@@ -26,8 +26,8 @@ class Subscriber(object):
 
     def connect(self):
 
-        server = self.config['server']
-        port = self.config['port']
+        server = self.config['server_hostname']
+        port = self.config['port_zmq']
 
         self.context = zmq.Context()
         self.socket = self.context.socket(zmq.SUB)

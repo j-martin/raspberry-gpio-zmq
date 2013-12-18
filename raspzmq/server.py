@@ -56,7 +56,7 @@ class Publisher(object):
         self.alerts.send(message)
 
     def register_zmq_server(self):
-        port = self.config['port']
+        port = self.config['port_zmq']
 
         self.context = zmq.Context()
         self.zmq_socket = self.context.socket(zmq.PUB)

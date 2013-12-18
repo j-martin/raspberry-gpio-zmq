@@ -25,13 +25,13 @@ class Alerts(object):
         alerts = self.config['alerts']
         alerts_list = []
 
-        if alerts['AlertSMS']['on']:
+        if alerts['sms']['on']:
             alerts_list.append(alerts.sms(alerts['AlertSMS']))
 
-        if alerts['AlertPushBullet']['on']:
+        if alerts['pushbullet']['on']:
             alerts_list.append(alerts.pushbullet(alerts['AlertPushBullet']))
 
-        if alerts['AlertEmail']['on']:
+        if alerts['email']['on']:
             alerts_list.append(alerts.sms(alerts['AlertPushBullet']))
 
         self.alerts = alerts_list
