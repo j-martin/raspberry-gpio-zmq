@@ -2,7 +2,7 @@
   "server_hostname": "raspberrypi",
   "port_zmq": "45678",
   "port_http": "5001",
-  "host_bind": "0.0.0.0",
+  "host_http": "0.0.0.0",
   "log_path": "./logs/",
   "credentials": {
     "username": "admin",
