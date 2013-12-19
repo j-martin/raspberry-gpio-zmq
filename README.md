@@ -6,6 +6,8 @@ Linking realworld input from a RaspberryPi to the interwebs!
 
 Monitors the GPIO events (on/off) of the RaspberryPi (may work on other device with some work) and notifies clients via ZMQ (client.py), email, sms (text) or pushbullet (push to Android, Chrome and iOS (planned)). It also feature a webserver (Flask) to check the logs.
 
+![Screenshot](https://raw.github.com/j-martin/raspberry-gpio-zmq/master/static/img/screenshot.png)
+
 It can be used for example as an ad-hoc security system or anything really.
 
 This project has been tested against Python 2.6 and 2.7 only.
