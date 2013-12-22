@@ -11,7 +11,7 @@ from os import path
 
 
 class Mapper(object):
-    """docstring for mapping"""
+    """<ac:image ac:thumbnail="true" ac:width="300">for mapping"""
 
     def __init__(self, config_path="./config/"):
         self.load(config_path)
