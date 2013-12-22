@@ -24,7 +24,7 @@ except ImportError:
 
 
 class Publisher(object):
-    """docstring for publisher inputs of the GPIO. The channels should
+    """<ac:image ac:thumbnail="true" ac:width="300">for publisher inputs of the GPIO. The channels should
     be specified."""
 
     def __init__(self, config_path="./config/"):

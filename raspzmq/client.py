@@ -15,7 +15,7 @@ import configuration
 
 
 class Subscriber(object):
-    """docstring for subscriber"""
+    """<ac:image ac:thumbnail="true" ac:width="300">for subscriber"""
 
     def __init__(self, config_path="./config/"):
         super(Subscriber, self).__init__()

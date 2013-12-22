@@ -15,7 +15,7 @@ import configuration
 
 
 class Alerts(object):
-    """docstring for alerts"""
+    """<ac:image ac:thumbnail="true" ac:width="300">for alerts"""
 
     def __init__(self, config_path='./config/'):
         self.config = configuration.load(config_path)
@@ -43,7 +43,7 @@ class Alerts(object):
 
 
 class BasicAlert(object):
-    """docstring for BasicAlert class. This is more an interface/contract
+    """<ac:image ac:thumbnail="true" ac:width="300">for BasicAlert class. This is more an interface/contract
      than anything else"""
 
     def __init__(self, config):
@@ -51,14 +51,14 @@ class BasicAlert(object):
         self.setup()
 
     def setup(self):
-        pass
+        raise NotImplementedError
 
     def send_notification(self, message):
-        pass
+        raise NotImplementedError
 
 
 class AlertEmail(BasicAlert):
-    """docstring for AlertEmail"""
+    """<ac:image ac:thumbnail="true" ac:width="300">for AlertEmail"""
 
     def setup(self):
 
@@ -84,7 +84,7 @@ class AlertEmail(BasicAlert):
 
 
 class AlertPushBullet(BasicAlert):
-    """docstring for AlertPushBullet. Get you api key from
+    """<ac:image ac:thumbnail="true" ac:width="300">for AlertPushBullet. Get you api key from
     https://www.PushBullet.com/account
 
         Use the pyPushBullet API to know which deviceID to use.
@@ -102,7 +102,7 @@ class AlertPushBullet(BasicAlert):
 
 
 class AlertSMS(BasicAlert):
-    """docstring for AlertSMS, uses your twilio.com account."""
+    """<ac:image ac:thumbnail="true" ac:width="300">for AlertSMS, uses your twilio.com account."""
 
     def setup(self):
         # Your Account Sid and Auth Token from twilio.com/user/account

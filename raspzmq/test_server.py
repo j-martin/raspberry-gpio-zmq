@@ -10,7 +10,7 @@ import raspzmq.server
 
 
 class fakeGPIO(object):
-    """docstring for fakeGPIO so tests can be run on somehting
+    """<ac:image ac:thumbnail="true" ac:width="300">for fakeGPIO so tests can be run on somehting
     else than a RaspberryPi"""
 
     def __init__(self):
